@@ -1,0 +1,46 @@
+{
+  "name": "QCT CloudPayments Form",
+  "description": "QCToken CloudPayments Form",
+  "package": "QCT.CLOUD_PAYMENTS",
+  "group": "View",
+  "type": "QCT.CLOUD_PAYMENTS.CLOUD_PAYMENTS_FORM",
+  "attributes": [
+    {
+      "name": "getPayInfo",
+      "type": ["Operator"],
+      "control": "executor",
+      "description": "Get pay info by operator"
+    },
+    {
+      "name": "publicId",
+      "type": ["env"],
+      "control": "text",
+      "description": "Set publicId for CloudPayments"
+    },
+    {
+      "name": "submitHandlerSuccess",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "description": "Handler to invoke"
+    },
+    {
+      "name": "submitHandlerFail",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "description": "Handler to invoke"
+    },
+    {
+      "name": "buttonChild",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "description": "Set button child"
+    },
+    {
+      "name": "scriptUrl",
+      "type": ["string"],
+      "control": "text",
+      "description": "Set script url for main CloudPayments script",
+      "default": "https://widget.cloudpayments.ru/bundles/cloudpayments.js"
+    }
+  ]
+}

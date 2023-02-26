@@ -1,0 +1,83 @@
+{
+  "name": "QCT Show Records",
+  "description": "QCToken Show Records - display all records in sub components. Each record will pass to all components in the childs",
+  "package": "QCT.COMMON",
+  "group": "View",
+  "type": "QCT.COMMON.SHOW_RECORDS",
+  "attributes": [
+    {
+      "name": "query",
+      "type": ["string"],
+      "control": "text",
+      "description": "Select url path to fetch application"
+    },
+    {
+      "name": "queryParams",
+      "type": ["getGlobals"],
+      "control": "config",
+      "description": "Get information from globals"
+    },
+    {
+      "name": "records",
+      "type": ["json[]"],
+      "control": "json",
+      "description": "Set records for the nested elements"
+    },
+    {
+      "name": "mapRecords",
+      "type": ["Operator"],
+      "control": "executor",
+      "description": "Get records from values and process to nested values"
+    },
+    {
+      "name": "alt",
+      "type": ["string"],
+      "control": "text",
+      "description": "If no records, show alternative option"
+    },
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Render nested elements"
+    },
+    {
+      "name": "setGlobal",
+      "type": ["setglobals"],
+      "control": "config",
+      "description": "Set value(s) into global variable"
+    },
+    {
+      "name": "isSetGlobalFirst",
+      "type": ["boolean"],
+      "control": "boolean",
+      "default": true,
+      "description": "false - Set all records, true - set first record"
+    },
+    {
+      "name": "pageSize",
+      "type": ["number"],
+      "control": "number",
+      "description": "Pagination page size"
+    },
+    {
+      "name": "cacheKey",
+      "type": ["string"],
+      "control": "text",
+      "description": "Set cacheKey to request"
+    },
+    {
+      "name": "notFoundChilds",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Display UI children for empty records"
+    },
+    {
+      "name": "loaderColor",
+      "type": ["string"],
+      "control": "selectColor",
+      "default": "primary.main",
+      "description": "Loader color"
+    }
+  ]
+}

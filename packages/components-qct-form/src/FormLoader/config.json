@@ -1,0 +1,16 @@
+{
+  "name": "QCT Form Loader",
+  "description": "Show loader when the form is submitting",
+  "package": "QCT.FORM",
+  "group": "Form",
+  "type": "QCT.FORM.LOADER",
+  "attributes": [
+    {
+      "name": "color",
+      "type": ["string"],
+      "control": "selectColor",
+      "description": "Loader color",
+      "default": "common.white"
+    }
+  ]
+}

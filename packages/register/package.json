@@ -1,0 +1,35 @@
+{
+  "name": "@qctoken/register",
+  "version": "0.0.1",
+  "description": "QCToken component register for local and external modules",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc -b",
+    "postinstall": "pnpm run build",
+    "test-coverage": "pnpm run test --collectCoverage",
+    "test": "jest --config ../../jest.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qctoken/qfe-core.git"
+  },
+  "keywords": [
+    "qctoken",
+    "react",
+    "register",
+    "components"
+  ],
+  "author": "Oleh Kutsenko",
+  "bugs": {
+    "url": "https://github.com/qctoken/qfe-core/issues"
+  },
+  "homepage": "https://github.com/qctoken/qfe-core#readme",
+  "dependencies": {
+    "react": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0"
+  }
+}

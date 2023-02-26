@@ -1,0 +1,47 @@
+{
+  "name": "QCT ImageField RFD",
+  "description": "QCToken ImageField",
+  "package": "QCT.FORM",
+  "group": "Form",
+  "type": "QCT.FORM.IMAGE_FIELD",
+  "attributes": [
+    {
+      "name": "size",
+      "type": ["string"],
+      "control": "text",
+      "description": "Crop size of the Image."
+    },
+    {
+      "name": "name",
+      "type": ["string"],
+      "control": "text",
+      "description": "Field name in the html"
+    },
+    {
+      "name": "resize",
+      "type": ["boolean"],
+      "control": "boolean",
+      "default": "true",
+      "description": "Image resize"
+    },
+    {
+      "name": "spacing",
+      "type": ["number"],
+      "control": "number",
+      "default": 5,
+      "description": "Spacing in Image Field content"
+    },
+    {
+      "name": "height",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Height Image Field content"
+    },
+    {
+      "name": "label",
+      "type": ["string"],
+      "control": "text",
+      "description": "Label of the FileField."
+    }
+  ]
+}

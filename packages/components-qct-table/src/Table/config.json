@@ -1,0 +1,102 @@
+{
+  "name": "QCT Table",
+  "description": "QCToken Table",
+  "package": "QCT.TABLE",
+  "group": "Table",
+  "type": "QCT.TABLE.TABLE",
+  "attributes": [
+    {
+      "name": "query",
+      "type": ["string"],
+      "control": "text",
+      "description": "Select url path to fetch page"
+    },
+    {
+      "name": "queryParams",
+      "type": ["getglobals"],
+      "control": "config",
+      "description": "Get query params from globals"
+    },
+    {
+      "name": "headers",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Table headers"
+    },
+    {
+      "name": "columns",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Table columns"
+    },
+    {
+      "name": "pageSize",
+      "type": ["number"],
+      "control": "number",
+      "description": "Pagination page size"
+    },
+    {
+      "name": "notFound",
+      "type": ["number"],
+      "control": "number",
+      "description": "Empty table text"
+    },
+    {
+      "name": "borderSpacing",
+      "type": ["string"],
+      "control": "margin",
+      "description": "Table row spacing"
+    },
+    {
+      "name": "showBorder",
+      "type": ["boolean"],
+      "control": "boolean",
+      "description": "Show table row border",
+      "default": true
+    },
+    {
+      "name": "hoverBackgroundColor",
+      "type": ["boolean"],
+      "default": true,
+      "control": "boolean",
+      "description": "Table row background color on hover"
+    },
+    {
+      "name": "backgroundColor",
+      "type": ["string"],
+      "control": "selectColor",
+      "default": "common.white",
+      "description": "Table body background color"
+    },
+    {
+      "name": "addSelect",
+      "type": ["boolean"],
+      "control": "boolean",
+      "default": false,
+      "description": "Selecting items in a table"
+    },
+    {
+      "name": "onError",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "description": "Handler to invoke"
+    },
+    {
+      "name": "cacheKey",
+      "type": ["string"],
+      "control": "text",
+      "description": "Set cacheKey to request"
+    },
+    {
+      "name": "tableLayout",
+      "type": ["string"],
+      "control": "select",
+      "default": "auto",
+      "chooses": [
+        { "name": "auto", "value": "auto" },
+        { "name": "fixed", "value": "fixed" }
+      ],
+      "description": "The property defines the algorithm used to lay out table cells, rows, and columns."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "name": "QCT Snackbar",
+  "description": "QCToken Snackbar",
+  "package": "QCT.COMMON",
+  "group": "Action",
+  "type": "QCT.COMMON.SNACKBAR",
+  "attributes": [
+    {
+      "name": "positionType",
+      "type": ["string"],
+      "description": "Set Snackbar position",
+      "default": "bottomRight",
+      "control": "select",
+      "chooses": [
+        {
+          "name": "top center",
+          "value": "topCenter"
+        },
+        {
+          "name": "top left",
+          "value": "topLeft"
+        },
+        {
+          "name": "top right",
+          "value": "topRight"
+        },
+        {
+          "name": "bottom center",
+          "value": "bottomCenter"
+        },
+        {
+          "name": "bottom left",
+          "value": "bottomLeft"
+        },
+        {
+          "name": "bottom right",
+          "value": "bottomRight"
+        }
+      ]
+    },
+    {
+      "name": "backgroundColor",
+      "type": ["string"],
+      "control": "selectColor",
+      "default": "text.error",
+      "description": "Snackbar background color"
+    },
+    {
+      "name": "width",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Snackbar width size"
+    }
+  ]
+}

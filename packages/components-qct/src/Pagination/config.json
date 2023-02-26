@@ -1,0 +1,42 @@
+{
+  "name": "QCT Pagination",
+  "description": "QCToken Pagination",
+  "package": "QCT.COMMON",
+  "group": "Action",
+  "type": "QCT.COMMON.PAGINATION",
+  "attributes": [
+    {
+      "name": "masterId",
+      "type": ["reference"],
+      "control": "text",
+      "description": "Select master object to which you want to join pagination"
+    },
+    {
+      "name": "backgroundColor",
+      "type": ["string"],
+      "control": "selectColor",
+      "default": "common.white",
+      "description": "Pagination background color"
+    },
+    {
+      "name": "siblingCount",
+      "type": ["number"],
+      "default": 1,
+      "control": "number",
+      "description": "Pagination sibling count"
+    },
+    {
+      "name": "width",
+      "type": ["string"],
+      "control": "cssMeasure,text",
+      "default": "auto",
+      "description": "Pagination width"
+    },
+    {
+      "name": "margin",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "margin",
+      "description": "Pagination margin"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "QCT GoBack",
+  "description": "QCToken GoBack",
+  "package": "QCT.ROUTER",
+  "group": "Action",
+  "type": "QCT.ROUTER.GO_BACK",
+  "attributes": [
+    {
+      "name": "count",
+      "type": ["number"],
+      "control": "number",
+      "default": 1,
+      "description": "How many pages to go back"
+    },
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "example": [
+        {
+          "pageObjectId": "text",
+          "objectId": "text",
+          "title": "Go back",
+          "type": "QCT.COMMON.TYPOGRAPHY"
+        }
+      ],
+      "description": "Nested elements for go-back link, eg Typography"
+    }
+  ]
+}

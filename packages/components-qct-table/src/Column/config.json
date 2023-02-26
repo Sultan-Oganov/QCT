@@ -1,0 +1,67 @@
+{
+  "name": "QCT Column",
+  "description": "QCToken Column",
+  "package": "QCT.TABLE",
+  "group": "Table",
+  "type": "QCT.TABLE.COLUMN",
+  "attributes": [
+    {
+      "name": "name",
+      "type": ["string"],
+      "control": "text",
+      "description": "Set record name"
+    },
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "description": "Nested elements for the Column",
+      "control": "config"
+    },
+    {
+      "name": "width",
+      "type": ["string"],
+      "description": "Column width",
+      "control": "cssMeasure"
+    },
+    {
+      "name": "backgroundColor",
+      "type": ["string"],
+      "control": "selectColor",
+      "description": "Column backgroundColor"
+    },
+    {
+      "name": "borderRadius",
+      "type": ["string"],
+      "control": "border",
+      "description": "Border radius"
+    },
+    {
+      "name": "padding",
+      "type": ["string"],
+      "control": "padding",
+      "description": "Column padding",
+      "default": "16px"
+    },
+    {
+      "name": "align",
+      "type": ["string"],
+      "control": "select",
+      "description": "Align position Column",
+      "chooses": [
+        {
+          "name": "left",
+          "value": "left"
+        },
+        {
+          "name": "right",
+          "value": "right"
+        },
+        {
+          "name": "center",
+          "value": "center"
+        }
+      ],
+      "default": "left"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "QCT Form show errors",
+  "description": "Show form errors",
+  "package": "QCT.FORM",
+  "group": "Form",
+  "type": "QCT.FORM.ERRORS",
+  "attributes": [
+    {
+      "name": "color",
+      "type": ["string"],
+      "control": "select",
+      "description": "Defines the color of message.",
+      "chooses": [
+        {
+          "name": "white",
+          "value": "common.white"
+        },
+        {
+          "name": "black",
+          "value": "common.black"
+        },
+        {
+          "name": "main",
+          "value": "text.main"
+        },
+        {
+          "name": "stroke",
+          "value": "common.stroke"
+        },
+        {
+          "name": "error",
+          "value": "text.error"
+        }
+      ]
+    }
+  ]
+}

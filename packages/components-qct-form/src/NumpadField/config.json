@@ -1,0 +1,16 @@
+{
+  "name": "QCT NumpadField RFD",
+  "description": "QCToken NumpadField",
+  "package": "QCT.FORM",
+  "group": "Form",
+  "type": "QCT.FORM.NUMPAD_FIELD",
+  "link": "https://www.figma.com/file/DEXx9J4ZzeLIewGO2K5VX6/QCT-main?node-id=6651%3A49772",
+  "attributes": [
+    {
+      "name": "name",
+      "type": ["string"],
+      "control": "text",
+      "description": "Field name in the html"
+    }
+  ]
+}

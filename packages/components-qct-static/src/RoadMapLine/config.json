@@ -1,0 +1,17 @@
+{
+  "name": "QCT RoadMapLine",
+  "description": "QCToken RoadMapLine",
+  "package": "QCT.STATIC",
+  "group": "Roadmap",
+  "type": "QCT.STATIC.ROADMAP.LINE",
+  "deprecated": true,
+  "attributes": [
+    {
+      "name": "width",
+      "type": ["number"],
+      "default": 100,
+      "control": "number",
+      "description": "RoadMapLine"
+    }
+  ]
+}

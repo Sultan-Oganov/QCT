@@ -1,0 +1,15 @@
+{
+  "name": "QCT MetamaskContainer",
+  "description": "QCToken MetamaskContainer",
+  "package": "QCT.METAMASK",
+  "group": "Metamask",
+  "type": "QCT.METAMASK.METAMASK_CONTAINER",
+  "attributes": [
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "description": "Nested elements",
+      "control": "config"
+    }
+  ]
+}

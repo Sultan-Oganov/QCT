@@ -1,0 +1,21 @@
+{
+  "name": "QCT Static CourseCard",
+  "description": "QCToken Course Card",
+  "package": "QCT.STATIC",
+  "group": "View",
+  "type": "QCT.STATIC.COURSE_CARD",
+  "attributes": [
+    {
+      "name": "promotions",
+      "type": ["boolean"],
+      "control": "boolean",
+      "description": "Show promotions in the Card"
+    },
+    {
+      "name": "link",
+      "type": ["string"],
+      "description": "Link to the course when click on icon",
+      "control": "text"
+    }
+  ]
+}

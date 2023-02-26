@@ -1,0 +1,27 @@
+{
+  "name": "QCT Handlers Submit Request",
+  "description": "Handler for submit request",
+  "package": "QCT.HANDLERS",
+  "group": "Handlers",
+  "type": "QCT.HANDLERS.SUBMIT_REQUEST",
+  "attributes": [
+    {
+      "name": "queryUrl",
+      "type": ["Operator"],
+      "description": "Set query to make request",
+      "control": "executor"
+    },
+    {
+      "name": "queryMethod",
+      "type": ["Operator"],
+      "description": "Select method to make request",
+      "control": "executor"
+    },
+    {
+      "name": "onError",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "description": "Handler to invoke"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "name": "QCT Carousel RFD",
+  "description": "QCToken Carousel",
+  "package": "QCT.COMMON",
+  "group": "View",
+  "type": "QCT.COMMON.CAROUSEL",
+  "link": "https://www.figma.com/file/lHZxBAnu1fCYFbHAIQiwTE/Libriary?node-id=1772%3A10229",
+  "attributes": [
+    {
+      "name": "width",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "default": "640px",
+      "description": "Defines the width of the carousel."
+    },
+    {
+      "name": "height",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "default": "360px",
+      "description": "Defines the height of the carousel."
+    },
+    {
+      "name": "slideWidth",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Defines the slide width of the carousel."
+    },
+    {
+      "name": "showArrow",
+      "type": ["boolean"],
+      "control": "boolean",
+      "example": true,
+      "description": "Determines whether to show arrows or not"
+    },
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Render nested elements"
+    },
+    {
+      "name": "spaceBetween",
+      "type": ["number"],
+      "control": "number",
+      "description": "Space between carousel items",
+      "default": 50
+    },
+    {
+      "name": "query",
+      "type": ["string"],
+      "control": "text",
+      "description": "Select url path to fetch application"
+    },
+    {
+      "name": "notFoundChilds",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Display UI children for empty records"
+    },
+    {
+      "name": "loop",
+      "type": ["boolean"],
+      "control": "boolean",
+      "default": true,
+      "description": "Infinity loop"
+    },
+    {
+      "name": "loaderColor",
+      "type": ["string"],
+      "control": "selectColor",
+      "default": "primary.main",
+      "description": "Loader color"
+    }
+  ]
+}

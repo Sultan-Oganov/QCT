@@ -1,0 +1,15 @@
+{
+  "name": "QCT Static NotFoundCourseCard",
+  "description": "QCToken Not Found Course Card",
+  "package": "QCT.STATIC",
+  "group": "View",
+  "type": "QCT.STATIC.NOT_FOUND_COURSE_CARD",
+  "attributes": [
+    {
+      "name": "button",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "description": "Card nested button child"
+    }
+  ]
+}

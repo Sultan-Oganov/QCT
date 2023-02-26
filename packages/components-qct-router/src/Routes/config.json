@@ -1,0 +1,15 @@
+{
+  "name": "QCT Routes Component",
+  "description": "Create group of routes",
+  "package": "QCT.ROUTER",
+  "group": "Router",
+  "type": "QCT.ROUTER.ROUTES",
+  "attributes": [
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "description": "Nested elements. Can render only Route or RoutePage",
+      "control": "config"
+    }
+  ]
+}

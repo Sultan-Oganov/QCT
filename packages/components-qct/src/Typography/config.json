@@ -1,0 +1,202 @@
+{
+  "name": "QCT Typography",
+  "description": "QCToken Typography",
+  "package": "QCT.COMMON",
+  "group": "Action",
+  "type": "QCT.COMMON.TYPOGRAPHY",
+  "attributes": [
+    {
+      "name": "title",
+      "type": ["string"],
+      "control": "text",
+      "example": "Lorem ipsum",
+      "description": "Typography text"
+    },
+    {
+      "name": "getTitle",
+      "type": ["Operator"],
+      "description": "Get title from executor. Have bigger priority",
+      "control": "executor"
+    },
+    {
+      "name": "variant",
+      "type": ["string"],
+      "control": "select",
+      "default": "regular",
+      "description": "Variant of typography",
+      "chooses": [
+        {
+          "name": "mega",
+          "value": "mega"
+        },
+        {
+          "name": "h1",
+          "value": "h1"
+        },
+        {
+          "name": "h2",
+          "value": "h2"
+        },
+        {
+          "name": "h3",
+          "value": "h3"
+        },
+        {
+          "name": "highlighted",
+          "value": "highlighted"
+        },
+        {
+          "name": "regular",
+          "value": "regular"
+        },
+        {
+          "name": "sub",
+          "value": "sub"
+        },
+        {
+          "name": "badge",
+          "value": "badge"
+        },
+        {
+          "name": "micro",
+          "value": "micro"
+        }
+      ]
+    },
+    {
+      "name": "styles",
+      "type": ["string"],
+      "control": "config",
+      "example": {
+        "fontSize": 14
+      },
+      "description": "Typography styles"
+    },
+    {
+      "name": "color",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "select",
+      "description": "Main color",
+      "chooses": [
+        {
+          "name": "primary",
+          "value": "primary"
+        },
+        {
+          "name": "secondary",
+          "value": "secondary"
+        },
+        {
+          "name": "white",
+          "value": "white"
+        },
+        {
+          "name": "black",
+          "value": "black"
+        },
+        {
+          "name": "main",
+          "value": "main"
+        },
+        {
+          "name": "nonActive",
+          "value": "nonActive"
+        }
+      ]
+    },
+    {
+      "name": "hoverColor",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "select",
+      "description": "Hover color",
+      "chooses": [
+        {
+          "name": "primary",
+          "value": "primary"
+        },
+        {
+          "name": "secondary",
+          "value": "secondary"
+        },
+        {
+          "name": "white",
+          "value": "white"
+        },
+        {
+          "name": "black",
+          "value": "black"
+        },
+        {
+          "name": "main",
+          "value": "main"
+        }
+      ]
+    },
+    {
+      "name": "opacity",
+      "type": ["number"],
+      "control": "number",
+      "description": "Set opacity"
+    },
+    {
+      "name": "fontSize",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Set fontSize for text"
+    },
+    {
+      "name": "noWrap",
+      "type": ["boolean"],
+      "control": "boolean",
+      "description": "If `true`, the text will not wrap, but instead will truncate with a text overflow ellipsis. Note that text overflow can only happen with block or inline-block level elements (the element needs to have a width in order to overflow)."
+    },
+    {
+      "name": "lines",
+      "type": ["number"],
+      "control": "number",
+      "description": "Select number of lines to ellipsis"
+    },
+    {
+      "name": "wordBreak",
+      "type": ["string"],
+      "control": "select",
+      "chooses": [
+        {
+          "name": "break-word",
+          "value": "break-word"
+        },
+        {
+          "name": "keep-all",
+          "value": "keep-all"
+        },
+        {
+          "name": "break-all",
+          "value": "break-all"
+        },
+        {
+          "name": "normal",
+          "value": "normal"
+        }
+      ],
+      "default": "normal",
+      "description": "The word-break property sets whether line breaks appear wherever the text would otherwise overflow its content box."
+    },
+    {
+      "name": "textAlign",
+      "type": ["string"],
+      "control": "select",
+      "chooses": [
+        { "name": "Left", "value": "left" },
+        { "name": "Center", "value": "center" },
+        { "name": "Right", "value": "right" }
+      ],
+      "description": "Set text align"
+    },
+    {
+      "name": "translate",
+      "type": ["boolean"],
+      "control": "boolean",
+      "description": "Should translate value to selected user language"
+    }
+  ]
+}

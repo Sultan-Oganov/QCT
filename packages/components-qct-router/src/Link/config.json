@@ -1,0 +1,91 @@
+{
+  "name": "QCT Link",
+  "description": "QCToken Link",
+  "package": "QCT.ROUTER",
+  "group": "Action",
+  "type": "QCT.ROUTER.LINK",
+  "attributes": [
+    {
+      "name": "to",
+      "type": ["string", "Operator"],
+      "default": "/",
+      "control": "text,executor",
+      "description": "Path to the other route"
+    },
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "example": [
+        {
+          "pageObjectId": "text",
+          "objectId": "text",
+          "title": "Go to other page",
+          "type": "QCT.COMMON.TYPOGRAPHY"
+        }
+      ],
+      "description": "Nested elements for link, eg Typography"
+    },
+    {
+      "name": "borderRadius",
+      "type": ["string"],
+      "control": "border",
+      "description": "Border radius",
+      "example": "6px"
+    },
+    {
+      "name": "activeBackgroundColor",
+      "type": ["string"],
+      "control": "color,text",
+      "description": "Background color for active state"
+    },
+    {
+      "name": "isActivePartial",
+      "type": ["boolean", "Operator"],
+      "control": "boolean,executor",
+      "description": "Partial detect link for active state"
+    },
+    {
+      "name": "activeTextColor",
+      "type": ["string"],
+      "control": "color,text",
+      "description": "Text color for active state"
+    },
+    {
+      "name": "borderType",
+      "type": ["string"],
+      "control": "select",
+      "chooses": [
+        {
+          "name": "solid",
+          "value": "solid"
+        },
+        {
+          "name": "dashed",
+          "value": "dashed"
+        },
+        {
+          "name": "dotted",
+          "value": "dotted"
+        },
+        {
+          "name": "double",
+          "value": "double"
+        }
+      ],
+      "description": "Defines the border style property."
+    },
+    {
+      "name": "borderWidth",
+      "type": ["string"],
+      "control": "stroke",
+      "description": "Defines the border width style property."
+    },
+    {
+      "name": "borderColor",
+      "type": ["string"],
+      "control": "color,text",
+      "description": "Defines the border color style property."
+    }
+  ]
+}

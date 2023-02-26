@@ -1,0 +1,15 @@
+{
+  "name": "QCT ColumnAuthor",
+  "description": "QCToken ColumnAuthor",
+  "package": "QCT.TABLE",
+  "group": "Table",
+  "type": "QCT.TABLE.COLUMN_AUTHOR",
+  "attributes": [
+    {
+      "name": "name",
+      "type": ["string"],
+      "control": "text",
+      "description": "Set record name"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "QCT SetRouterParams",
+  "description": "QCToken SetRouterParams",
+  "package": "QCT.ROUTER",
+  "group": "Action",
+  "type": "QCT.ROUTER.SET_ROUTER_PARAMS",
+  "attributes": []
+}

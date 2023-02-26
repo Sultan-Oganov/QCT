@@ -1,0 +1,15 @@
+{
+  "name": "QCT Handlers ExecuteOperator",
+  "description": "Call other handler or group by masterId",
+  "package": "QCT.HANDLERS",
+  "group": "Handlers",
+  "type": "QCT.HANDLERS.EXECUTE_OPERATOR",
+  "attributes": [
+    {
+      "name": "operator",
+      "type": ["Operator"],
+      "description": "Get value from operator",
+      "control": "executor"
+    }
+  ]
+}

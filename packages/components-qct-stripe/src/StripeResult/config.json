@@ -1,0 +1,15 @@
+{
+  "name": "QCT Stripe Result",
+  "description": "QCToken Stripe Result",
+  "package": "QCT.STRIPE",
+  "group": "View",
+  "type": "QCT.STRIPE.STRIPE_RESULT",
+  "attributes": [
+    {
+      "name": "loadScriptSrc",
+      "type": ["string"],
+      "control": "text",
+      "description": "Set src for loadScript"
+    }
+  ]
+}

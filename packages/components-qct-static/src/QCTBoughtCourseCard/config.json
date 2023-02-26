@@ -1,0 +1,15 @@
+{
+  "name": "QCT Static BoughtCourseCard",
+  "description": "QCToken Bought Course Card",
+  "package": "QCT.STATIC",
+  "group": "View",
+  "type": "QCT.STATIC.BOUGHT_COURSE_CARD",
+  "attributes": [
+    {
+      "name": "link",
+      "type": ["string"],
+      "description": "Link to the course when click on icon",
+      "control": "text"
+    }
+  ]
+}

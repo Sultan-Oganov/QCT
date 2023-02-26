@@ -1,0 +1,29 @@
+{
+  "name": "QCT Progress Stepper",
+  "description": "QCToken Progress Stepper",
+  "package": "QCT.COMMON",
+  "group": "View",
+  "type": "QCT.COMMON.PROGRESS_STEPPER",
+  "attributes": [
+    {
+      "name": "progress",
+      "type": ["number", "Operator"],
+      "default": 1,
+      "control": "number,executor",
+      "description": "Set step value"
+    },
+    {
+      "name": "steps",
+      "type": ["string[]"],
+      "control": "json",
+      "description": "Set array of steps"
+    },
+    {
+      "name": "activeColor",
+      "type": ["string"],
+      "default": "primary.main",
+      "control": "selectColor",
+      "description": "ProgressStepper active color"
+    }
+  ]
+}

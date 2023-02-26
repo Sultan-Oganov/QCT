@@ -1,0 +1,56 @@
+{
+  "name": "QCT Icon button",
+  "description": "QCToken Icon button",
+  "package": "QCT.COMMON",
+  "group": "Action",
+  "type": "QCT.COMMON.ICON_BUTTON",
+  "attributes": [
+    {
+      "name": "icon",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "description": "Icon element to display"
+    },
+    {
+      "name": "masterId",
+      "type": ["reference"],
+      "control": "text",
+      "description": "Choose master object to invoke any handlers"
+    },
+    {
+      "name": "actionName",
+      "type": ["string"],
+      "default": "onProcess",
+      "control": "text",
+      "description": "Enter handler name for the master element"
+    },
+    {
+      "name": "hiddenRules",
+      "type": ["Operator[]"],
+      "description": "List of operator to execute",
+      "control": "executor"
+    },
+    {
+      "name": "actionClick",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "description": "Handler to invoke"
+    },
+    {
+      "name": "htmlType",
+      "type": ["string"],
+      "control": "select",
+      "description": "Set html type",
+      "chooses": [
+        {
+          "name": "submit",
+          "value": "submit"
+        },
+        {
+          "name": "reset",
+          "value": "reset"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "QCT Static Landing",
+  "description": "QCToken Landing",
+  "package": "QCT.STATIC",
+  "group": "View",
+  "type": "QCT.STATIC.LANDING",
+  "attributes": [
+    {
+      "name": "startLink",
+      "type": ["string"],
+      "control": "text",
+      "description": "Set link path for start button"
+    },
+    {
+      "name": "buyQCTLink",
+      "type": ["string"],
+      "control": "text",
+      "description": "Set link path for buy QCT button"
+    }
+  ]
+}

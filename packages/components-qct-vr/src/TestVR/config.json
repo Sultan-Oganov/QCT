@@ -1,0 +1,8 @@
+{
+  "name": "QCT TestVR",
+  "description": "QCToken TestVR",
+  "package": "QCT.SURVEY",
+  "group": "Survey",
+  "type": "QCT.VR.TEST_VR",
+  "attributes": []
+}

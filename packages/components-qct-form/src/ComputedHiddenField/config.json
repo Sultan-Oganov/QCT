@@ -1,0 +1,21 @@
+{
+  "name": "QCT ComputedHiddenField",
+  "description": "QCToken ComputedHiddenField",
+  "package": "QCT.FORM",
+  "group": "Form",
+  "type": "QCT.FORM.COMPUTED_HIDDEN_FIELD",
+  "attributes": [
+    {
+      "name": "name",
+      "type": ["string"],
+      "control": "text",
+      "description": "Field name in the html"
+    },
+    {
+      "name": "getComputedValue",
+      "type": ["Operator"],
+      "description": "Get value from executor",
+      "control": "executor"
+    }
+  ]
+}

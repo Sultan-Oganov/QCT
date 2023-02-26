@@ -1,0 +1,15 @@
+{
+  "name": "QCT BreadCrumbs",
+  "description": "QCToken BreadCrumbs",
+  "package": "QCT.COMMON",
+  "group": "View",
+  "type": "QCT.COMMON.BREAD_CRUMBS",
+  "attributes": [
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Nested items of the Breadcrumbs component"
+    }
+  ]
+}

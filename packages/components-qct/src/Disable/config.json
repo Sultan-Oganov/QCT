@@ -1,0 +1,27 @@
+{
+  "name": "QCT Disable",
+  "description": "QCToken Disable",
+  "package": "QCT.COMMON",
+  "group": "View",
+  "type": "QCT.COMMON.DISABLE",
+  "attributes": [
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Nested Elements"
+    },
+    {
+      "name": "disableRules",
+      "type": ["Operator[]"],
+      "description": "Detect that nested children should be disabled",
+      "control": "executor"
+    },
+    {
+      "name": "invert",
+      "type": ["boolean"],
+      "description": "Set to invert value from result",
+      "control": "boolean"
+    }
+  ]
+}

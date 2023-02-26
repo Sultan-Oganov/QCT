@@ -1,0 +1,22 @@
+{
+  "name": "QCT Handlers Invoke",
+  "description": "Call other handler or group by masterId",
+  "package": "QCT.HANDLERS",
+  "group": "Handlers",
+  "type": "QCT.HANDLERS.INVOKE",
+  "attributes": [
+    {
+      "name": "actionName",
+      "type": ["string"],
+      "default": "onProcess",
+      "control": "text",
+      "description": "List of names of the handlers"
+    },
+    {
+      "name": "masterId",
+      "type": ["reference"],
+      "control": "text",
+      "description": "Choose master object to invoke any handlers"
+    }
+  ]
+}

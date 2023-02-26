@@ -1,0 +1,43 @@
+{
+  "name": "QCT TextArea RFD",
+  "description": "QCToken TextArea",
+  "package": "QCT.FORM",
+  "group": "Form",
+  "type": "QCT.FORM.TEXT_AREA",
+  "link": "https://www.figma.com/file/lHZxBAnu1fCYFbHAIQiwTE/Libriary?node-id=3248%3A16313",
+  "attributes": [
+    {
+      "name": "label",
+      "type": ["string"],
+      "control": "text",
+      "default": "label",
+      "description": "TextArea label text"
+    },
+    {
+      "name": "name",
+      "type": ["string"],
+      "default": "",
+      "control": "text",
+      "description": "Field name in the html"
+    },
+    {
+      "name": "disabled",
+      "type": ["boolean"],
+      "control": "boolean",
+      "default": false,
+      "description": "Set that field is disabled"
+    },
+    {
+      "name": "helperText",
+      "type": ["string"],
+      "control": "text",
+      "description": "Field helper text in the html"
+    },
+    {
+      "name": "maxLength",
+      "type": ["number"],
+      "control": "number",
+      "description": "Field text length"
+    }
+  ]
+}

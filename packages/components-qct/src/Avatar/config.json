@@ -1,0 +1,29 @@
+{
+  "name": "QCT Avatar",
+  "description": "QCToken Avatar",
+  "package": "QCT.COMMON",
+  "group": "Action",
+  "type": "QCT.COMMON.AVATAR",
+  "attributes": [
+    {
+      "name": "size",
+      "type": ["number"],
+      "control": "number",
+      "description": "Size of the avatar component. Value in px",
+      "default": 26
+    },
+    {
+      "name": "src",
+      "type": ["string", "Operator"],
+      "control": "file,executor",
+      "description": "Avatar url"
+    },
+    {
+      "name": "name",
+      "type": ["string", "Operator"],
+      "control": "text,executor",
+      "description": "Name of the avatar. The First 2 letters will use as a placeholder if src missed",
+      "example": "User"
+    }
+  ]
+}

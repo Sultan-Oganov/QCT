@@ -1,0 +1,39 @@
+{
+  "name": "@qctoken/store",
+  "version": "0.0.1",
+  "description": "QCToken store package to control data in the application",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc -b",
+    "test-coverage": "pnpm run test --collectCoverage",
+    "test": "jest --config ../../jest.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qctoken/qfe-core.git"
+  },
+  "keywords": [
+    "qctoken",
+    "react",
+    "store",
+    "recoil"
+  ],
+  "author": "Oleh Kutsenko",
+  "bugs": {
+    "url": "https://github.com/qctoken/qfe-core/issues"
+  },
+  "homepage": "https://github.com/qctoken/qfe-core#readme",
+  "dependencies": {
+    "@qctoken/executor": "workspace:^0.0.1",
+    "@qctoken/register": "workspace:^0.0.1",
+    "mobx": "^6.6.1",
+    "mobx-react-lite": "^3.4.0",
+    "query-string": "^7.1.1",
+    "react": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0"
+  }
+}

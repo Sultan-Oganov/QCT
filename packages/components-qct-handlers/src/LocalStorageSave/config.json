@@ -1,0 +1,34 @@
+{
+  "name": "QCT Handlers LocalStorageSave",
+  "description": "Save information into LocalStorage",
+  "package": "QCT.HANDLERS",
+  "group": "Handlers",
+  "type": "QCT.HANDLERS.LOCAL_STORAGE_SAVE",
+  "attributes": [
+    {
+      "name": "from",
+      "type": ["string"],
+      "control": "text",
+      "description": "Path to the value in values"
+    },
+    {
+      "name": "to",
+      "type": ["string"],
+      "control": "text",
+      "description": "Name of localStorage variable"
+    },
+    {
+      "name": "actionName",
+      "type": ["string"],
+      "default": "onProcess",
+      "control": "select",
+      "description": "List of names of the handlers",
+      "chooses": [
+        {
+          "name": "Process save to localStorage from values",
+          "value": "onProcess"
+        }
+      ]
+    }
+  ]
+}

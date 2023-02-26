@@ -1,0 +1,73 @@
+{
+  "name": "BCH TextField",
+  "description": "BCH TextField",
+  "package": "BCH.COMMON",
+  "group": "Form",
+  "type": "BCH.COMMON.TEXT_FIELD",
+  "attributes": [
+    {
+      "name": "label",
+      "type": ["string", "Operator"],
+      "control": "text,executor",
+      "description": "TextField label text",
+      "example": "TextField"
+    },
+    {
+      "name": "placeholder",
+      "type": ["string", "Operator"],
+      "control": "text,executor",
+      "description": "Placeholder for input"
+    },
+    {
+      "name": "validators",
+      "type": ["string[]"],
+      "control": "multiselect",
+      "description": "TextField validations",
+      "chooses": [
+        {
+          "name": "email",
+          "value": "email"
+        },
+        {
+          "name": "required",
+          "value": "required"
+        }
+      ]
+    },
+    {
+      "name": "disabled",
+      "type": ["boolean"],
+      "description": "Set component disabled",
+      "control": "boolean",
+      "default": false
+    },
+    {
+      "name": "name",
+      "type": ["string"],
+      "default": "",
+      "control": "text",
+      "description": "Field name in the html"
+    },
+    {
+      "name": "htmlType",
+      "type": ["string"],
+      "default": "text",
+      "description": "Set type of html element",
+      "control": "select",
+      "chooses": [
+        {
+          "name": "text",
+          "value": "text"
+        },
+        {
+          "name": "number",
+          "value": "number"
+        },
+        {
+          "name": "password",
+          "value": "password"
+        }
+      ]
+    }
+  ]
+}

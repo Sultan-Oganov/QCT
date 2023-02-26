@@ -1,0 +1,73 @@
+{
+  "name": "QCT Tooltip",
+  "description": "QCToken Tooltip",
+  "package": "QCT.COMMON",
+  "group": "Action",
+  "type": "QCT.COMMON.TOOLTIP",
+  "attributes": [
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Nested elements of the Tooltip component"
+    },
+    {
+      "name": "positionType",
+      "type": ["string"],
+      "default": "bottom",
+      "description": "Set tooltip position",
+      "control": "select",
+      "chooses": [
+        {
+          "name": "top",
+          "value": "top"
+        },
+        {
+          "name": "bottom",
+          "value": "bottom"
+        },
+        {
+          "name": "left",
+          "value": "left"
+        },
+        {
+          "name": "right",
+          "value": "right"
+        }
+      ]
+    },
+    {
+      "name": "message",
+      "type": ["string"],
+      "control": "text",
+      "description": "Tooltip message text"
+    },
+    {
+      "name": "backgroundColor",
+      "type": ["string"],
+      "control": "selectColor",
+      "default": "primary.main",
+      "description": "Tooltip background color"
+    },
+    {
+      "name": "color",
+      "type": ["string"],
+      "default": "common.white",
+      "control": "selectColor",
+      "description": "Tooltip text color"
+    },
+    {
+      "name": "width",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Tooltip width size"
+    },
+    {
+      "name": "showTime",
+      "type": ["number"],
+      "control": "number",
+      "default": 4,
+      "description": "After how many seconds to hide the tooltip?"
+    }
+  ]
+}

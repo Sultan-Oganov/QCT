@@ -1,0 +1,21 @@
+{
+  "name": "QCT Builder: Preview page object",
+  "description": "Preview existing page object",
+  "package": "QCT.BUILDER",
+  "group": "View",
+  "type": "QCT.BUILDER.PAGE_PREVIEW",
+  "attributes": [
+    {
+      "name": "query",
+      "type": ["string"],
+      "control": "text",
+      "description": "Select url path to fetch page"
+    },
+    {
+      "name": "queryParams",
+      "type": ["getglobals"],
+      "control": "config",
+      "description": "Get query params from globals"
+    }
+  ]
+}

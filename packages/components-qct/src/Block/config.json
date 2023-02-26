@@ -1,0 +1,255 @@
+{
+  "name": "QCT Block RFD",
+  "description": "QCToken Block",
+  "package": "QCT.COMMON",
+  "group": "Action",
+  "type": "QCT.COMMON.BLOCK",
+  "attributes": [
+    {
+      "name": "positionType",
+      "type": ["string"],
+      "control": "select",
+      "chooses": [
+        {
+          "name": "static",
+          "value": "static"
+        },
+        {
+          "name": "relative",
+          "value": "relative"
+        },
+        {
+          "name": "absolute",
+          "value": "absolute"
+        },
+        {
+          "name": "fixed",
+          "value": "fixed"
+        },
+        {
+          "name": "sticky",
+          "value": "sticky"
+        }
+      ],
+      "default": "static",
+      "description": "Defines the position type property."
+    },
+    {
+      "name": "positionSpace",
+      "type": ["position"],
+      "control": "config",
+      "description": "Defines the position property (top right bottom left). Write in turn with a space",
+      "example": {
+        "top": "0px",
+        "left": "0px"
+      }
+    },
+    {
+      "name": "borderRadius",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "border",
+      "description": "Block border radius",
+      "example": "6px"
+    },
+    {
+      "name": "margin",
+      "type": ["string"],
+      "control": "margin",
+      "description": "Block margin",
+      "example": "6px"
+    },
+    {
+      "name": "padding",
+      "type": ["string"],
+      "control": "padding",
+      "description": "Block paddings",
+      "example": "6px"
+    },
+    {
+      "name": "hoverBackgroundColor",
+      "type": ["string"],
+      "control": "text",
+      "description": "Block background color on hover"
+    },
+    {
+      "name": "backgroundColor",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "selectColor",
+      "description": "Block background color"
+    },
+    {
+      "name": "backgroundImage",
+      "type": ["string"],
+      "control": "file",
+      "description": "Block background-image"
+    },
+    {
+      "name": "backgroundSize",
+      "type": ["string"],
+      "control": "select",
+      "description": "Block background-image size",
+      "chooses": [
+        {
+          "name": "cover",
+          "value": "cover"
+        },
+        {
+          "name": "contain",
+          "value": "contain"
+        },
+        {
+          "name": "auto",
+          "value": "auto"
+        }
+      ]
+    },
+    {
+      "name": "backgroundX",
+      "type": ["number"],
+      "control": "number",
+      "description": "Defines the property's image position by X."
+    },
+    {
+      "name": "backgroundY",
+      "type": ["number"],
+      "control": "number",
+      "description": "Defines the property's image position by Y."
+    },
+    {
+      "name": "disabled",
+      "type": ["boolean"],
+      "description": "Set disabled element",
+      "control": "boolean"
+    },
+    {
+      "name": "shadowType",
+      "type": ["string"],
+      "control": "select",
+      "chooses": [
+        {
+          "name": "inset",
+          "value": "inset"
+        },
+        {
+          "name": "offset",
+          "value": " "
+        }
+      ],
+      "description": "Defines the shadow style property."
+    },
+    {
+      "name": "shadowX",
+      "type": ["number"],
+      "control": "number",
+      "description": "Defines the property's shadow by X."
+    },
+    {
+      "name": "shadowY",
+      "type": ["number"],
+      "control": "number",
+      "description": "Defines the property's shadow by Y."
+    },
+    {
+      "name": "shadowBlur",
+      "type": ["number"],
+      "control": "number",
+      "description": "Defines shadow blur properties."
+    },
+    {
+      "name": "shadowColor",
+      "type": ["string"],
+      "control": "select",
+      "description": "Defines shadow color properties.",
+      "chooses": [
+        {
+          "name": "primary",
+          "value": "primary"
+        },
+        {
+          "name": "secondary",
+          "value": "secondary"
+        },
+        {
+          "name": "white",
+          "value": "white"
+        },
+        {
+          "name": "black",
+          "value": "black"
+        },
+        {
+          "name": "main",
+          "value": "main"
+        }
+      ]
+    },
+    {
+      "name": "borderType",
+      "type": ["string"],
+      "control": "select",
+      "chooses": [
+        {
+          "name": "solid",
+          "value": "solid"
+        },
+        {
+          "name": "dashed",
+          "value": "dashed"
+        },
+        {
+          "name": "dotted",
+          "value": "dotted"
+        },
+        {
+          "name": "double",
+          "value": "double"
+        }
+      ],
+      "description": "Defines the border style property."
+    },
+    {
+      "name": "borderWidth",
+      "type": ["string"],
+      "control": "stroke",
+      "description": "Defines the border width style property."
+    },
+    {
+      "name": "borderColor",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "selectColor",
+      "description": "Defines the border color style property."
+    },
+    {
+      "name": "width",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Width"
+    },
+    {
+      "name": "height",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Height"
+    },
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "description": "Nested elements for the block",
+      "control": "config",
+      "example": [
+        {
+          "pageObjectId": "unique1",
+          "objectId": "child2",
+          "type": "QCT.BUTTON",
+          "title": "Default Button"
+        }
+      ]
+    },
+    {
+      "name": "hiddenRules",
+      "type": ["Operator[]"],
+      "description": "List of operator to execute",
+      "control": "executor"
+    }
+  ]
+}

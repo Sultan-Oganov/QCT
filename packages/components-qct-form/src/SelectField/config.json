@@ -1,0 +1,60 @@
+{
+  "name": "QCT SelectField RFD",
+  "description": "QCToken SelectField",
+  "package": "QCT.FORM",
+  "group": "Form",
+  "type": "QCT.FORM.SELECT_FIELD",
+  "link": "https://www.figma.com/file/lHZxBAnu1fCYFbHAIQiwTE/Libriary?node-id=137%3A1499",
+  "attributes": [
+    {
+      "name": "query",
+      "type": ["string"],
+      "control": "text",
+      "description": "Select url path to fetch page"
+    },
+    {
+      "name": "queryParams",
+      "type": ["getglobals"],
+      "control": "config",
+      "description": "Get query params from globals"
+    },
+    {
+      "name": "label",
+      "type": ["string"],
+      "control": "text",
+      "description": "SelectField label text",
+      "example": "SelectField"
+    },
+    {
+      "name": "disabled",
+      "type": ["boolean"],
+      "description": "Set component disabled",
+      "control": "boolean",
+      "default": false
+    },
+    {
+      "name": "name",
+      "type": ["string"],
+      "control": "text",
+      "description": "Field name in the html"
+    },
+    {
+      "name": "valueField",
+      "type": ["string"],
+      "control": "text",
+      "description": "Get value text by name from record"
+    },
+    {
+      "name": "displayField",
+      "type": ["string"],
+      "control": "text",
+      "description": "Get display text by name from record"
+    },
+    {
+      "name": "chooses",
+      "type": ["string[]"],
+      "control": "config",
+      "description": "Select field choose options"
+    }
+  ]
+}

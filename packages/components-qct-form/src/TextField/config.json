@@ -1,0 +1,92 @@
+{
+  "name": "QCT TextField RFD",
+  "description": "QCToken TextField",
+  "package": "QCT.FORM",
+  "group": "Form",
+  "type": "QCT.FORM.TEXT_FIELD",
+  "link": "https://www.figma.com/file/lHZxBAnu1fCYFbHAIQiwTE/Libriary?node-id=137%3A1499",
+  "attributes": [
+    {
+      "name": "label",
+      "type": ["string"],
+      "control": "text",
+      "description": "TextField label text",
+      "example": "TextField"
+    },
+    {
+      "name": "validators",
+      "type": ["string[]"],
+      "control": "multiselect",
+      "description": "TextField validations",
+      "chooses": [
+        {
+          "name": "email",
+          "value": "email"
+        },
+        {
+          "name": "required",
+          "value": "required"
+        }
+      ]
+    },
+    {
+      "name": "disabled",
+      "type": ["boolean"],
+      "description": "Set component disabled",
+      "control": "boolean",
+      "default": false
+    },
+    {
+      "name": "name",
+      "type": ["string"],
+      "default": "",
+      "control": "text",
+      "description": "Field name in the html"
+    },
+    {
+      "name": "htmlType",
+      "type": ["string"],
+      "default": "text",
+      "description": "Set type of html element",
+      "control": "select",
+      "chooses": [
+        {
+          "name": "text",
+          "value": "text"
+        },
+        {
+          "name": "number",
+          "value": "number"
+        },
+        {
+          "name": "password",
+          "value": "password"
+        }
+      ]
+    },
+    {
+      "name": "icon",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "description": "Icon element to display"
+    },
+    {
+      "name": "setglobal",
+      "type": ["setglobals"],
+      "control": "config",
+      "description": "Set value into global values of page"
+    },
+    {
+      "name": "helperText",
+      "type": ["string"],
+      "control": "text",
+      "description": "Field helper text in the html"
+    },
+    {
+      "name": "maxLength",
+      "type": ["number"],
+      "control": "number",
+      "description": "Field text length"
+    }
+  ]
+}

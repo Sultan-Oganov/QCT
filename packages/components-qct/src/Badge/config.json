@@ -1,0 +1,63 @@
+{
+  "name": "QCT Badge RFD",
+  "description": "QCToken Badge",
+  "package": "QCT.COMMON",
+  "group": "View",
+  "type": "QCT.COMMON.BADGE",
+  "link": "https://www.figma.com/file/lHZxBAnu1fCYFbHAIQiwTE/Libriary?node-id=137%3A1129",
+  "attributes": [
+    {
+      "name": "title",
+      "type": ["string"],
+      "control": "text",
+      "description": "Title of the Badge.",
+      "example": "9K"
+    },
+    {
+      "name": "color",
+      "type": ["string"],
+      "control": "select",
+      "description": "Defines Badge color properties.",
+      "example": "white",
+      "chooses": [
+        {
+          "name": "white",
+          "value": "white"
+        },
+        {
+          "name": "black",
+          "value": "black"
+        }
+      ]
+    },
+    {
+      "name": "backgroundColor",
+      "type": ["string"],
+      "control": "select",
+      "description": "Defines Badge background-color properties.",
+      "example": "primary",
+      "chooses": [
+        {
+          "name": "primary",
+          "value": "primary"
+        },
+        {
+          "name": "secondary",
+          "value": "secondary"
+        },
+        {
+          "name": "white",
+          "value": "white"
+        },
+        {
+          "name": "black",
+          "value": "black"
+        },
+        {
+          "name": "red",
+          "value": "red"
+        }
+      ]
+    }
+  ]
+}

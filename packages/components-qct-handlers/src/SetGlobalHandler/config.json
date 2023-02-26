@@ -1,0 +1,28 @@
+{
+  "name": "QCT Handlers SetGlobal",
+  "description": "Handler for set global values",
+  "package": "QCT.HANDLERS",
+  "group": "Handlers",
+  "type": "QCT.HANDLERS.SET_GLOBAL_HANDLER",
+  "attributes": [
+    {
+      "name": "actionName",
+      "type": ["string"],
+      "default": "onProcess",
+      "control": "select",
+      "description": "List of names of the handlers",
+      "chooses": [
+        {
+          "name": "Set global values",
+          "value": "onProcess"
+        }
+      ]
+    },
+    {
+      "name": "setglobal",
+      "type": ["setglobals"],
+      "control": "config",
+      "description": "Set value into global values of page"
+    }
+  ]
+}

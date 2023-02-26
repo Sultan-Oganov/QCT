@@ -1,0 +1,104 @@
+{
+  "name": "QCT FileField RFD",
+  "description": "QCToken FileField",
+  "package": "QCT.FORM",
+  "group": "Form",
+  "type": "QCT.FORM.FILE_FIELD",
+  "attributes": [
+    {
+      "name": "label",
+      "type": ["string"],
+      "control": "text",
+      "description": "Label of the FileField."
+    },
+    {
+      "name": "name",
+      "type": ["string"],
+      "control": "text",
+      "description": "Field name in the html"
+    },
+    {
+      "name": "fileType",
+      "type": ["string"],
+      "control": "select",
+      "description": "File field type in the html",
+      "default": "image",
+      "chooses": [
+        {
+          "name": "image",
+          "value": "image"
+        },
+        {
+          "name": "video",
+          "value": "video"
+        }
+      ]
+    },
+    {
+      "name": "spacing",
+      "type": ["number"],
+      "control": "number",
+      "default": 5,
+      "description": "Spacing in FileField content"
+    },
+    {
+      "name": "height",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Height FileField content"
+    },
+    {
+      "name": "disabled",
+      "type": ["boolean"],
+      "description": "Set component disabled",
+      "control": "boolean",
+      "default": false
+    },
+    {
+      "name": "btnWidht",
+      "type": ["string"],
+      "description": "Set width to file button",
+      "control": "cssMeasure"
+    },
+    {
+      "name": "showIcon",
+      "type": ["boolean"],
+      "description": "Show file icon",
+      "control": "boolean",
+      "default": true
+    },
+    {
+      "name": "extraLink",
+      "type": ["boolean"],
+      "control": "boolean",
+      "default": true,
+      "description": "File field link"
+    },
+    {
+      "name": "extraLinkLabel",
+      "type": ["string"],
+      "control": "text",
+      "description": "Extra link label"
+    },
+    {
+      "name": "imgHeight",
+      "type": ["string"],
+      "default": "100%",
+      "control": "cssMeasure",
+      "description": "Height FileField image"
+    },
+    {
+      "name": "imgWidth",
+      "type": ["string"],
+      "default": "100%",
+      "control": "cssMeasure",
+      "description": "Width FileField image"
+    },
+    {
+      "name": "helperText",
+      "type": ["string"],
+      "control": "text",
+      "description": "Field helper text in the html"
+    }
+  ]
+}

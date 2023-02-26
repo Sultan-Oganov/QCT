@@ -1,0 +1,26 @@
+{
+  "name": "@qctoken/components-qct-survey",
+  "private": true,
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "scripts": {},
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@qctoken/executor": "workspace:^0.0.1",
+    "@qctoken/register": "workspace:^0.0.1",
+    "@qctoken/store": "workspace:^0.0.1",
+    "@qctoken/theme": "workspace:^0.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "survey-core": "^1.9.64",
+    "survey-creator-core": "^1.9.64",
+    "survey-creator-react": "^1.9.64",
+    "survey-react-ui": "^1.9.64"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "typescript": "^4.6.3"
+  }
+}

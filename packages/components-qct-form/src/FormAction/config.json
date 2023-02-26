@@ -1,0 +1,15 @@
+{
+  "name": "QCT Form Action RFD",
+  "description": "QCToken Form Action",
+  "package": "QCT.FORM",
+  "group": "Form",
+  "type": "QCT.FORM.FORM_ACTION",
+  "attributes": [
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "description": "Nested component",
+      "control": "config"
+    }
+  ]
+}

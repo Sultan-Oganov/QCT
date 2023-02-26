@@ -1,0 +1,47 @@
+{
+  "name": "QCT ProgressCircle",
+  "description": "QCToken ProgressCircle",
+  "package": "QCT.COMMON",
+  "group": "View",
+  "type": "QCT.COMMON.PROGRESS_CIRCLE",
+  "attributes": [
+    {
+      "name": "width",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Width of block"
+    },
+    {
+      "name": "height",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Height of block"
+    },
+    {
+      "name": "thickness",
+      "type": ["number"],
+      "default": 2,
+      "control": "number",
+      "description": "Line Thickness"
+    },
+    {
+      "name": "color",
+      "type": ["string"],
+      "default": "primary",
+      "control": "selectColor",
+      "description": "Select color for line"
+    },
+    {
+      "name": "progress",
+      "type": ["number", "Operator"],
+      "control": "number,executor",
+      "description": "Progress value"
+    },
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Content elements"
+    }
+  ]
+}

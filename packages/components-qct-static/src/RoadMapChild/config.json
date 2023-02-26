@@ -1,0 +1,15 @@
+{
+  "name": "QCT Static RoadMapChild",
+  "description": "QCToken RoadMapChild",
+  "package": "QCT.STATIC",
+  "group": "Roadmap",
+  "type": "QCT.STATIC.ROADMAP.CHILD",
+  "deprecated": true,
+  "attributes": [
+    {
+      "name": "child",
+      "type": ["BuilderConfig"],
+      "control": "config"
+    }
+  ]
+}

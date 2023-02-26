@@ -1,0 +1,28 @@
+{
+  "name": "QCT Handlers Process",
+  "description": "Combine few handlers into one process",
+  "package": "QCT.HANDLERS",
+  "group": "Handlers",
+  "type": "QCT.HANDLERS.PROCESS",
+  "attributes": [
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Set any handlers that you need to invoke one by one"
+    },
+    {
+      "name": "actionName",
+      "type": ["string"],
+      "default": "onProcess",
+      "control": "select",
+      "description": "List of names of the handlers",
+      "chooses": [
+        {
+          "name": "Process nested actions",
+          "value": "onProcess"
+        }
+      ]
+    }
+  ]
+}

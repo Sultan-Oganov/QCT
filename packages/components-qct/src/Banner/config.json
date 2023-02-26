@@ -1,0 +1,131 @@
+{
+  "name": "QCT Banner",
+  "description": "QCToken Banner",
+  "package": "QCT.COMMON",
+  "group": "View",
+  "type": "QCT.COMMON.BANNER",
+  "attributes": [
+    {
+      "name": "width",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "default": "100%",
+      "description": "Banner width"
+    },
+    {
+      "name": "height",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "default": "190px",
+      "description": "Banner height"
+    },
+    {
+      "name": "imageType",
+      "type": ["string"],
+      "control": "select",
+      "default": "right",
+      "description": "Select banner type, image (full banner, right, left, two small)",
+      "chooses": [
+        {
+          "name": "full",
+          "value": "full"
+        },
+        {
+          "name": "right",
+          "value": "right"
+        },
+        {
+          "name": "left",
+          "value": "left"
+        },
+        {
+          "name": "twoSmall",
+          "value": "twoSmall"
+        },
+        {
+          "name": "oneSmall",
+          "value": "oneSmall"
+        }
+      ]
+    },
+    {
+      "name": "gradient",
+      "type": ["boolean"],
+      "control": "boolean",
+      "default": false,
+      "description": "Banner primary background gradient color"
+    },
+    {
+      "name": "textAlign",
+      "type": ["string"],
+      "control": "select",
+      "default": "left",
+      "description": "Select banner text content alignment",
+      "chooses": [
+        {
+          "name": "left",
+          "value": "left"
+        },
+        {
+          "name": "right",
+          "value": "right"
+        },
+        {
+          "name": "center",
+          "value": "center"
+        }
+      ]
+    },
+    {
+      "name": "title",
+      "type": ["string"],
+      "control": "text",
+      "default": "TITLE",
+      "description": "Bannet title"
+    },
+    {
+      "name": "description",
+      "type": ["string"],
+      "control": "text",
+      "default": "Lorem ipsum dolor sit amet consectetur. Massa sed mauris turpis elementum fusce et.",
+      "description": "Banner description"
+    },
+    {
+      "name": "logo",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "description": "Banner Logo"
+    },
+    {
+      "name": "button",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "description": "Banner button"
+    },
+    {
+      "name": "backgroundColor",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "selectColor",
+      "default": "common.stroke",
+      "description": "Banner background color"
+    },
+    {
+      "name": "mainBackgroundImage",
+      "type": ["string", "Operator"],
+      "control": "file,executor",
+      "description": "Banner main background-image(full-banner, medium - left or right position)"
+    },
+    {
+      "name": "secondBackgroundImage",
+      "type": ["string", "Operator"],
+      "control": "file,executor",
+      "description": "Second Background-image if banner type is 'twoSmall'"
+    },
+    {
+      "name": "price",
+      "type": ["string"],
+      "control": "text",
+      "description": "Banner text price"
+    }
+  ]
+}

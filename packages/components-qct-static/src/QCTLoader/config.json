@@ -1,0 +1,22 @@
+{
+  "name": "QCT Static LOADER",
+  "description": "QCToken LOADER",
+  "package": "QCT.STATIC",
+  "group": "View",
+  "type": "QCT.STATIC.LOADER",
+  "attributes": [
+    {
+      "name": "size",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Size of the Loader component",
+      "default": "100%"
+    },
+    {
+      "name": "color",
+      "type": ["string"],
+      "control": "selectColor",
+      "description": "Loader color"
+    }
+  ]
+}

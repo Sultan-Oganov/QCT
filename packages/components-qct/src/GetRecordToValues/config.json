@@ -1,0 +1,27 @@
+{
+  "name": "QCT GET_RECORD_TO_VALUES",
+  "description": "QCToken GET_RECORD_TO_VALUES",
+  "package": "QCT.COMMON",
+  "group": "View",
+  "type": "QCT.COMMON.GET_RECORD_TO_VALUES",
+  "attributes": [
+    {
+      "name": "query",
+      "type": ["string"],
+      "control": "text",
+      "description": "Select url path to fetch application"
+    },
+    {
+      "name": "queryParams",
+      "type": ["getGlobals"],
+      "control": "config",
+      "description": "Get information from globals"
+    },
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Nested Elements"
+    }
+  ]
+}

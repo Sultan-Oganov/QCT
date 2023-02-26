@@ -1,0 +1,39 @@
+{
+  "name": "QCT Stripe Form",
+  "description": "QCToken Stripe Form",
+  "package": "QCT.STRIPE",
+  "group": "View",
+  "type": "QCT.STRIPE.STRIPE_FORM",
+  "attributes": [
+    {
+      "name": "getClientSecret",
+      "type": ["Operator"],
+      "control": "executor",
+      "description": "Get client secret by operator"
+    },
+    {
+      "name": "publishableKey",
+      "type": ["env"],
+      "control": "text",
+      "description": "Set publishableKey for loadScript"
+    },
+    {
+      "name": "returnUrl",
+      "type": ["string", "Operator"],
+      "control": "text,executor",
+      "description": "Set return_url for confirmPayment"
+    },
+    {
+      "name": "buttonChild",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "description": "Set button child"
+    },
+    {
+      "name": "loadingChild",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "description": "Set loading child"
+    }
+  ]
+}

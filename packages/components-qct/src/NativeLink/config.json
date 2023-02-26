@@ -1,0 +1,21 @@
+{
+  "name": "QCT Native Link",
+  "description": "QCToken Native Link",
+  "package": "QCT.COMMON",
+  "group": "Action",
+  "type": "QCT.COMMON.NATIVE_LINK",
+  "attributes": [
+    {
+      "name": "url",
+      "type": ["string", "Operator"],
+      "description": "Set query to create a link",
+      "control": "text,executor"
+    },
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "description": "Nested elements for the native link",
+      "control": "config"
+    }
+  ]
+}

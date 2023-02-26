@@ -1,0 +1,29 @@
+{
+  "name": "QCT Form Field errors",
+  "description": "Show field errors",
+  "package": "QCT.FORM",
+  "group": "Form",
+  "type": "QCT.FORM.FIELD_ERRORS",
+  "attributes": [
+    {
+      "name": "color",
+      "type": ["string"],
+      "control": "selectColor",
+      "default": "text.error",
+      "description": "Defines the color of message."
+    },
+    {
+      "name": "name",
+      "type": ["string"],
+      "default": "",
+      "control": "text",
+      "description": "Field name in the html"
+    },
+    {
+      "name": "errorsMap",
+      "type": ["Record<string, string>"],
+      "control": "json",
+      "description": "Make an mapping of errors"
+    }
+  ]
+}

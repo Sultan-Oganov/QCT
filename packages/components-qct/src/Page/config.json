@@ -1,0 +1,33 @@
+{
+  "name": "QCT Page",
+  "description": "QCToken Page - common component to render abstract page",
+  "package": "QCT.COMMON",
+  "group": "Page",
+  "type": "QCT.COMMON.PAGE",
+  "attributes": [
+    {
+      "name": "appPath",
+      "type": ["string"],
+      "control": "text",
+      "description": "Set application path"
+    },
+    {
+      "name": "pagePath",
+      "type": ["string"],
+      "control": "text",
+      "description": "Set page path"
+    },
+    {
+      "name": "globalsDown",
+      "type": ["string[]"],
+      "control": "json",
+      "description": "Set list of globals to set global into page"
+    },
+    {
+      "name": "globalsUp",
+      "type": ["string[]"],
+      "control": "json",
+      "description": "Set list of globals to set globals into up page"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@qctoken/form",
+  "version": "0.0.1",
+  "description": "QCToken form to make a new field for the application",
+  "main": "src/index.ts",
+  "scripts": {
+    "test-coverage": "pnpm run test --collectCoverage",
+    "test": "jest --config ../../jest.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qctoken/qfe-core.git"
+  },
+  "keywords": [
+    "qctoken",
+    "react",
+    "form",
+    "mobx"
+  ],
+  "author": "Oleh Kutsenko",
+  "bugs": {
+    "url": "https://github.com/qctoken/qfe-core/issues"
+  },
+  "homepage": "https://github.com/qctoken/qfe-core#readme",
+  "dependencies": {
+    "@qctoken/register": "workspace:^0.0.1",
+    "@qctoken/store": "workspace:^0.0.1",
+    "react": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0"
+  }
+}

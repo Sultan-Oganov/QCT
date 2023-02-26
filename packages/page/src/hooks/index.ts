@@ -1,0 +1,1 @@
+export { usePageGlobals } from './usePageGlobals';

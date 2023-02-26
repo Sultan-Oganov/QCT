@@ -1,0 +1,15 @@
+{
+  "name": "QCT Table: Header",
+  "description": "QCToken Table: Header",
+  "package": "QCT.TABLE",
+  "group": "Table",
+  "type": "QCT.TABLE.HEADER",
+  "attributes": [
+    {
+      "name": "title",
+      "type": ["string"],
+      "control": "text",
+      "description": "Set title for header column"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "QCT BottomSheetMenu",
+  "description": "QCToken BottomSheetMenu",
+  "package": "QCT.COMMON",
+  "group": "View",
+  "type": "QCT.COMMON.BOTTOM_SHEET_MENU",
+  "attributes": [
+    {
+      "name": "header",
+      "type": ["BuilderConfig"],
+      "description": "Nested elements to render element in the Bottom Sheet header block.",
+      "control": "config"
+    },
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "description": "Nested elements to render element in the Bottom Sheet. All elements will be in the vertical direction",
+      "control": "config"
+    },
+    {
+      "name": "minHeight",
+      "type": ["number"],
+      "description": "Bottom sheet minHeight when open",
+      "control": "number"
+    },
+    {
+      "name": "maxHeight",
+      "type": ["number"],
+      "description": "Bottom sheet maxHeight when open",
+      "control": "number"
+    }
+  ]
+}

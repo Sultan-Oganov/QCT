@@ -1,0 +1,27 @@
+{
+  "name": "QCT AuthJWT",
+  "description": "QCToken AuthJWT",
+  "package": "QCT.COMMON",
+  "group": "Action",
+  "type": "QCT.COMMON.AUTH_JWT",
+  "attributes": [
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "description": "Nested elements for the AUTH JWT. Need if you want to check auth before load nested elements",
+      "control": "config"
+    },
+    {
+      "name": "getJWTToken",
+      "type": ["Operator"],
+      "description": "Get JWT token",
+      "control": "executor"
+    },
+    {
+      "name": "setGlobal",
+      "type": ["setglobals"],
+      "control": "config",
+      "description": "Set auth payload into global values"
+    }
+  ]
+}

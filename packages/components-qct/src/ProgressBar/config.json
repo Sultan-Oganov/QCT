@@ -1,0 +1,87 @@
+{
+  "name": "QCT ProgressBar RFD",
+  "description": "QCToken ProgressBar",
+  "package": "QCT.COMMON",
+  "group": "View",
+  "type": "QCT.COMMON.PROGRESSBAR",
+  "link": "https://www.figma.com/file/lHZxBAnu1fCYFbHAIQiwTE/Libriary?node-id=3236%3A15468",
+  "attributes": [
+    {
+      "name": "color",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "selectColor",
+      "description": "Main color"
+    },
+    {
+      "name": "width",
+      "type": ["string"],
+      "default": "100%",
+      "control": "cssMeasure",
+      "description": "ProgressBarPercent width %"
+    },
+    {
+      "name": "height",
+      "type": ["string"],
+      "default": "2px",
+      "control": "cssMeasure",
+      "description": "ProgressBarPercent height PX"
+    },
+    {
+      "name": "fontSize",
+      "type": ["string"],
+      "default": "14px",
+      "control": "cssMeasure",
+      "description": "Set fontSize for text"
+    },
+    {
+      "name": "activeLineColor",
+      "type": ["string", "AdaptiveCss[string]"],
+      "default": "primary.main",
+      "control": "selectColor",
+      "description": "ProgressBarPercent active line background-color"
+    },
+    {
+      "name": "lineColor",
+      "type": ["string", "AdaptiveCss[string]"],
+      "default": "common.stroke",
+      "control": "selectColor",
+      "description": "ProgressBarPercent line background-color"
+    },
+    {
+      "name": "progress",
+      "type": ["number", "Operator"],
+      "control": "number,executor",
+      "description": "Progress process"
+    },
+    {
+      "name": "startChilds",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Progress top nested childs"
+    },
+    {
+      "name": "endChilds",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Progress nested childs"
+    },
+    {
+      "name": "progressTopChilds",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Progress nested childs"
+    },
+    {
+      "name": "progressBottomChilds",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Progress nested childs"
+    },
+    {
+      "name": "numberToCI",
+      "type": ["Operator"],
+      "control": "executor",
+      "description": "Progress number from executor"
+    }
+  ]
+}

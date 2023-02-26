@@ -1,0 +1,48 @@
+{
+  "name": "QCT Window",
+  "description": "QCToken Window - common component to render abstract Window",
+  "package": "QCT.COMMON",
+  "group": "Window",
+  "type": "QCT.COMMON.WINDOW",
+  "attributes": [
+    {
+      "name": "title",
+      "type": ["string"],
+      "control": "text",
+      "example": "Lorem ipsum",
+      "description": "Window title"
+    },
+    {
+      "name": "width",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Window width",
+      "default": "600px"
+    },
+    {
+      "name": "minWidth",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Window minimal width",
+      "default": "200px"
+    },
+    {
+      "name": "height",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Window height"
+    },
+    {
+      "name": "header",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Nested elements of the header in Window  component"
+    },
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Nested elements of the Window component, like form, fields and other"
+    }
+  ]
+}

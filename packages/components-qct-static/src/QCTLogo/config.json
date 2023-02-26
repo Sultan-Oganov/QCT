@@ -1,0 +1,51 @@
+{
+  "name": "QCT Static Logo",
+  "description": "QCToken LOGO component",
+  "package": "QCT.STATIC",
+  "group": "View",
+  "type": "QCT.STATIC.LOGO",
+  "attributes": [
+    {
+      "name": "hiddenRules",
+      "type": ["Operator[]"],
+      "description": "List of operator to execute",
+      "control": "executor"
+    },
+    {
+      "name": "color",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "select",
+      "default": "common.white",
+      "description": "Select color for logo",
+      "chooses": [
+        {
+          "name": "primary",
+          "value": "primary.main"
+        },
+        {
+          "name": "secondary",
+          "value": "secondary.main"
+        },
+        {
+          "name": "white",
+          "value": "common.white"
+        },
+        {
+          "name": "black",
+          "value": "common.black"
+        },
+        {
+          "name": "main",
+          "value": "text.main"
+        }
+      ]
+    },
+    {
+      "name": "height",
+      "type": ["string"],
+      "description": "Height of the Icon",
+      "control": "cssMeasure",
+      "default": "42px"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "QCT Builder GroupObjectField",
+  "description": "QCToken GroupObjectField",
+  "package": "QCT.BUILDER",
+  "group": "Action",
+  "type": "QCT.BUILDER.GROUP_OBJECT_FIELD",
+  "attributes": [
+    {
+      "name": "name",
+      "type": ["string"],
+      "default": "group-object",
+      "control": "text",
+      "description": "Field name in the html"
+    },
+    {
+      "name": "query",
+      "type": ["string"],
+      "control": "text",
+      "description": "Select url path to fetch application"
+    },
+    {
+      "name": "setglobal",
+      "type": ["setglobals"],
+      "control": "config",
+      "description": "Set value into global values of page"
+    },
+    {
+      "name": "queryParams",
+      "type": ["getglobals"],
+      "control": "config",
+      "description": "Get information from globals"
+    },
+    {
+      "name": "height",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "default": "240px",
+      "description": "Defines the height of the carousel."
+    }
+  ]
+}

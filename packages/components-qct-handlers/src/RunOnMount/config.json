@@ -1,0 +1,15 @@
+{
+  "name": "QCT Handlers RunOnMount",
+  "description": "Call handler on mount",
+  "package": "QCT.HANDLERS",
+  "group": "Handlers",
+  "type": "QCT.HANDLERS.RUN_ON_MOUNT",
+  "attributes": [
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Childs handlers"
+    }
+  ]
+}

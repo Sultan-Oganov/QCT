@@ -1,0 +1,46 @@
+{
+  "name": "QCT Divider",
+  "description": "QCToken Divider",
+  "package": "QCT.COMMON",
+  "group": "View",
+  "type": "QCT.COMMON.DIVIDER",
+  "attributes": [
+    {
+      "name": "size",
+      "type": ["number"],
+      "control": "number",
+      "default": 1,
+      "description": "Size of divider in px"
+    },
+    {
+      "name": "orientation",
+      "type": ["string"],
+      "control": "select",
+      "default": "horizontal",
+      "description": "The component orientation.",
+      "chooses": [
+        {
+          "name": "horizontal",
+          "value": "horizontal"
+        },
+        {
+          "name": "vertical",
+          "value": "vertical"
+        }
+      ]
+    },
+    {
+      "name": "fullLength",
+      "type": ["boolean"],
+      "control": "boolean",
+      "default": true,
+      "description": "Set to full length"
+    },
+    {
+      "name": "color",
+      "type": ["string"],
+      "control": "selectColor",
+      "description": "Line color"
+    }
+  ]
+}

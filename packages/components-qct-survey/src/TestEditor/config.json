@@ -1,0 +1,15 @@
+{
+  "name": "QCT TestEditor",
+  "description": "QCToken TestEditor",
+  "package": "QCT.SURVEY",
+  "group": "Survey",
+  "type": "QCT.SURVEY.TEST_EDITOR",
+  "attributes": [
+    {
+      "name": "courseId",
+      "type": ["string", "Operator"],
+      "description": "Get id course",
+      "control": "text,executor"
+    }
+  ]
+}

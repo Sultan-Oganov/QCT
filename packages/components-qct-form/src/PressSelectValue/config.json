@@ -1,0 +1,28 @@
+{
+  "name": "QCT Press Select Value",
+  "description": "Render hidden field where admin can fill any childs and make custom design. Work similar to `select` but without html elements",
+  "package": "QCT.FORM",
+  "group": "Form",
+  "type": "QCT.FORM.PRESS_SELECT_VALUE",
+  "attributes": [
+    {
+      "name": "name",
+      "type": ["string"],
+      "control": "text",
+      "default": "press-select-value",
+      "description": "Field name in the html"
+    },
+    {
+      "name": "value",
+      "type": ["string"],
+      "control": "text",
+      "description": "Field value"
+    },
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "description": "Nested elements for the block",
+      "control": "config"
+    }
+  ]
+}

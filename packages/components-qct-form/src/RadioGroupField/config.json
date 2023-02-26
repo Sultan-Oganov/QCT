@@ -1,0 +1,51 @@
+{
+  "name": "QCT RadioGroup",
+  "description": "Select radio to choose which group we should use to insert element",
+  "package": "QCT.FORM",
+  "group": "Form",
+  "type": "QCT.FORM.RADIO_GROUP_FIELD",
+  "attributes": [
+    {
+      "name": "name",
+      "type": ["string"],
+      "control": "text",
+      "description": "Field name in the html"
+    },
+    {
+      "name": "displayName",
+      "type": ["string"],
+      "control": "text",
+      "description": "Key name of the record to show name of element"
+    },
+    {
+      "name": "valueName",
+      "type": ["string"],
+      "control": "text",
+      "description": "Key name of the record to get value"
+    },
+    {
+      "name": "query",
+      "type": ["string"],
+      "control": "text",
+      "description": "Select url path to fetch application"
+    },
+    {
+      "name": "setglobal",
+      "type": ["setglobals"],
+      "control": "config",
+      "description": "Set value into global values of page"
+    },
+    {
+      "name": "queryParams",
+      "type": ["getglobals"],
+      "control": "config",
+      "description": "Get information from globals"
+    },
+    {
+      "name": "showAll",
+      "type": ["boolean"],
+      "control": "boolean",
+      "description": "Set null for show all choose"
+    }
+  ]
+}

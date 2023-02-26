@@ -1,0 +1,21 @@
+{
+  "name": "QCT Static RoadMapLabelCard",
+  "description": "QCToken RoadMapLabelCard",
+  "package": "QCT.STATIC",
+  "group": "Roadmap",
+  "type": "QCT.STATIC.ROADMAP.LABELCARD",
+  "deprecated": true,
+  "attributes": [
+    {
+      "name": "title",
+      "type": ["string"],
+      "control": "text",
+      "default": "title"
+    },
+    {
+      "name": "child",
+      "type": ["BuilderConfig"],
+      "control": "config"
+    }
+  ]
+}

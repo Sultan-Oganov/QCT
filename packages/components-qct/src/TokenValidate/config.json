@@ -1,0 +1,21 @@
+{
+  "name": "QCT TokenValidate",
+  "description": "QCToken TokenValidate",
+  "package": "QCT.COMMON",
+  "group": "Action",
+  "type": "QCT.COMMON.TOKEN_VALIDATE",
+  "attributes": [
+    {
+      "name": "redirect",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "description": "Handler to invoke"
+    },
+    {
+      "name": "getJWTToken",
+      "type": ["Operator"],
+      "description": "Get JWT token",
+      "control": "executor"
+    }
+  ]
+}

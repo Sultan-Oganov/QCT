@@ -1,0 +1,45 @@
+{
+  "name": "QCT Route Page",
+  "description": "Create route to match path",
+  "package": "QCT.ROUTER",
+  "group": "Router",
+  "type": "QCT.ROUTER.ROUTE_PAGE",
+  "attributes": [
+    {
+      "name": "path",
+      "type": ["string"],
+      "control": "text",
+      "description": "Router path to match the page or nested component"
+    },
+    {
+      "name": "pageId",
+      "type": ["string"],
+      "control": "text",
+      "description": "Select page"
+    },
+    {
+      "name": "isSetParamsToStore",
+      "type": ["boolean"],
+      "control": "boolean",
+      "description": "All router params will set to globals"
+    },
+    {
+      "name": "accessList",
+      "type": ["number[]", "string[]"],
+      "control": "json",
+      "description": "Set access roles for the page"
+    },
+    {
+      "name": "globalsDown",
+      "type": ["string[]"],
+      "control": "json",
+      "description": "Set list of globals to set global into page"
+    },
+    {
+      "name": "globalsUp",
+      "type": ["string[]"],
+      "control": "json",
+      "description": "Set list of globals to set globals into up page"
+    }
+  ]
+}

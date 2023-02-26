@@ -1,0 +1,38 @@
+{
+  "name": "QCT Hidden",
+  "description": "QCToken Hidden",
+  "package": "QCT.COMMON",
+  "group": "View",
+  "type": "QCT.COMMON.HIDDEN",
+  "attributes": [
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Nested Elements"
+    },
+    {
+      "name": "hiddenRules",
+      "type": ["Operator[]"],
+      "description": "Detect that nested children should be hidden",
+      "control": "executor"
+    },
+    {
+      "name": "invert",
+      "type": ["boolean"],
+      "description": "Set to invert value from result",
+      "control": "boolean"
+    },
+    {
+      "name": "primaryOperator",
+      "type": ["string"],
+      "description": "Set primary operator of elements",
+      "control": "select",
+      "default": "and",
+      "chooses": [
+        { "name": "OR", "value": "or" },
+        { "name": "AND", "value": "and" }
+      ]
+    }
+  ]
+}

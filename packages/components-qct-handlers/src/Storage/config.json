@@ -1,0 +1,61 @@
+{
+  "name": "QCT Handlers Storage",
+  "description": "Save information into Storage",
+  "package": "QCT.HANDLERS",
+  "group": "Handlers",
+  "type": "QCT.HANDLERS.STORAGE",
+  "attributes": [
+    {
+      "name": "name",
+      "type": ["string"],
+      "control": "select",
+      "chooses": [
+        {
+          "name": "local",
+          "value": "LocalStorage"
+        }
+      ],
+      "description": "Name of the storage"
+    },
+    {
+      "name": "key",
+      "type": ["string", "Operator"],
+      "control": "text,executor",
+      "description": "Key in the Storage"
+    },
+    {
+      "name": "value",
+      "type": ["string", "Operator"],
+      "control": "text,executor",
+      "description": "Get value to save into Storage - not required for all"
+    },
+    {
+      "name": "command",
+      "type": ["string"],
+      "control": "select",
+      "chooses": [
+        {
+          "name": "add",
+          "value": "add"
+        },
+        {
+          "name": "delete",
+          "value": "delete"
+        }
+      ],
+      "description": "Command for Storage"
+    },
+    {
+      "name": "transformation",
+      "type": ["string"],
+      "control": "select",
+      "chooses": [
+        {
+          "name": "json",
+          "value": "json"
+        }
+      ],
+      "description": "Data format for transformation"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+import { makeStyles, type Theme } from '@qctoken/theme';
+export const useStyles = makeStyles((theme: Theme) => ({
+  root: {
+    width: '100%',
+    height: '100%',
+    background: 'rgba(0, 0, 0, 0.5)',
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    zIndex: 2,
+  },
+  modal: {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    padding: theme.spacing(4, 0),
+    width: 700,
+    height: 205,
+    minWidth: 200,
+    background: theme.colors.common.white,
+    borderRadius: 16,
+    display: 'flex',
+    flexDirection: 'column',
+    overflowY: 'auto',
+    maxHeight: '80%',
+  },
+  header: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    margin: theme.spacing(0, 0, 2, 0),
+    padding: theme.spacing(0, 4),
+  },
+  title: {
+    fontWeight: 500,
+    fontSize: 18,
+    letterSpacing: '0.003em',
+    color: theme.colors.text.main,
+  },
+  closeBtn: {
+    display: 'inline-block',
+    cursor: 'pointer',
+    padding: theme.spacing(4),
+  },
+  content: {
+    width: '100%',
+    padding: theme.spacing(4),
+    flexGrow: 1,
+  },
+  description: {
+    ...theme.typography.regular,
+  },
+  footer: {
+    padding: theme.spacing(0, 4),
+    display: 'flex',
+    gap: theme.spacing(4),
+  },
+  btn: {
+    flexGrow: 1,
+    height: 50,
+    borderRadius: 16,
+    border: 'none',
+    background: 'transparent',
+    cursor: 'pointer',
+  },
+  undoBtn: {
+    background: theme.colors.primary.main,
+    color: theme.colors.common.white,
+  },
+  deleteBtn: {
+    border: `1px solid ${theme.colors.primary.main}`,
+    color: theme.colors.primary.main,
+  },
+}));

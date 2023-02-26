@@ -1,0 +1,21 @@
+{
+  "name": "QCT Metamask",
+  "description": "QCToken Metamask",
+  "package": "QCT.METAMASK",
+  "group": "Metamask",
+  "type": "QCT.METAMASK.METAMASK",
+  "attributes": [
+    {
+      "name": "tokenContract",
+      "type": ["string"],
+      "control": "text",
+      "description": "Token contract address"
+    },
+    {
+      "name": "tokenHolder",
+      "type": ["string"],
+      "control": "text",
+      "description": "Token holder address"
+    }
+  ]
+}

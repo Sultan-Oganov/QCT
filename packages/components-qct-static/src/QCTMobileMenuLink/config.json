@@ -1,0 +1,28 @@
+{
+  "name": "QCT Static Mobile Menu Link",
+  "description": "QCToken Mobile Menu Link",
+  "package": "QCT.STATIC",
+  "group": "View",
+  "type": "QCT.STATIC.MOBILE_MENU_LINK",
+  "attributes": [
+    {
+      "name": "icon",
+      "type": ["BuilderConfig"],
+      "description": "Icon Element",
+      "control": "config"
+    },
+    {
+      "name": "caption",
+      "type": ["string"],
+      "description": "Caption text",
+      "control": "text"
+    },
+    {
+      "name": "to",
+      "type": ["string"],
+      "default": "",
+      "description": "Path for page",
+      "control": "text"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "QCT Dropdown",
+  "description": "QCToken Dropdown",
+  "package": "QCT.COMMON",
+  "group": "View",
+  "type": "QCT.COMMON.DROPDOWN",
+  "attributes": [
+    {
+      "name": "width",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Dropdown width",
+      "default": "200px"
+    },
+    {
+      "name": "label",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "description": "Dropdown label config"
+    },
+    {
+      "name": "icon",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "description": "Dropdown icon config"
+    },
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Dropdown content elements"
+    },
+    {
+      "name": "margin",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "margin",
+      "description": "Dropdown margin"
+    }
+  ]
+}

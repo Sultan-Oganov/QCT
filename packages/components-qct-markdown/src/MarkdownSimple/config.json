@@ -1,0 +1,21 @@
+{
+  "name": "QCT Markdown Simple",
+  "description": "QCToken Markdown Simple",
+  "package": "QCT.MARKDOWN",
+  "group": "View",
+  "type": "QCT.MARKDOWN.MARKDOWN_SIMPLE",
+  "attributes": [
+    {
+      "name": "content",
+      "type": ["string"],
+      "control": "textarea",
+      "description": "Render content with markdown syntax"
+    },
+    {
+      "name": "scrollTo",
+      "type": ["string", "Operator"],
+      "control": "text,executor",
+      "description": "Scroll into anchor element after render"
+    }
+  ]
+}

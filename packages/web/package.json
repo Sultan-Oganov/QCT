@@ -1,0 +1,42 @@
+{
+  "name": "@qctoken/web",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@babel/core": "^7.18.2",
+    "@qctoken/components-bch": "workspace:^0.0.0",
+    "@qctoken/components-qct": "workspace:^0.0.0",
+    "@qctoken/components-qct-builder": "workspace:^0.0.0",
+    "@qctoken/components-qct-cloudpayments": "workspace:^0.0.0",
+    "@qctoken/components-qct-form": "workspace:^0.0.0",
+    "@qctoken/components-qct-handlers": "workspace:^0.0.0",
+    "@qctoken/components-qct-markdown": "workspace:^0.0.0",
+    "@qctoken/components-qct-metamask": "workspace:^0.0.0",
+    "@qctoken/components-qct-router": "workspace:^0.0.0",
+    "@qctoken/components-qct-static": "workspace:^0.0.0",
+    "@qctoken/components-qct-stripe": "workspace:^0.0.0",
+    "@qctoken/components-qct-table": "workspace:^0.0.0",
+    "@qctoken/components-qct-survey": "workspace:^0.0.0",
+    "@qctoken/components-qct-vr": "workspace:^0.0.0",
+    "@qctoken/page": "workspace:^0.0.1",
+    "@qctoken/register": "workspace:^0.0.1",
+    "@qctoken/store": "workspace:^0.0.1",
+    "@qctoken/theme": "workspace:^0.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@emotion/babel-plugin": "^11.9.2",
+    "@emotion/react": "^11.9.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.9"
+  }
+}

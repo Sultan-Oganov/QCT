@@ -1,0 +1,15 @@
+{
+  "name": "QCT Enter Router",
+  "description": "Create an main router system for the application",
+  "package": "QCT.ROUTER",
+  "group": "Router",
+  "type": "QCT.ROUTER.BROWSER_ROUTER",
+  "attributes": [
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "description": "Nested elements",
+      "control": "config"
+    }
+  ]
+}

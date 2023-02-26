@@ -1,0 +1,51 @@
+{
+  "name": "QCT Get wallet",
+  "description": "QCToken Get wallet",
+  "package": "QCT.METAMASK",
+  "group": "Metamask",
+  "type": "QCT.METAMASK.GET_WALLET",
+  "attributes": [
+    {
+      "name": "icon",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "description": "Icon config"
+    },
+    {
+      "name": "onError",
+      "type": ["reference"],
+      "control": "text",
+      "description": "Choose master object to invoke any handlers"
+    },
+    {
+      "name": "onRefresh",
+      "type": ["string[]"],
+      "control": "json",
+      "description": "Choose master object to invoke any handlers"
+    },
+    {
+      "name": "iconButton",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "description": "Icon button config"
+    },
+    {
+      "name": "query",
+      "type": ["string"],
+      "control": "text",
+      "description": "Select url path to fetch data"
+    },
+    {
+      "name": "submitPostQuery",
+      "type": ["string"],
+      "control": "text",
+      "description": "Query to make post request"
+    },
+    {
+      "name": "cacheKey",
+      "type": ["string"],
+      "control": "text",
+      "description": "Name of the request cache"
+    }
+  ]
+}

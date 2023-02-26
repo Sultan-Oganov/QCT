@@ -1,0 +1,53 @@
+{
+  "name": "QCT Checkbox",
+  "description": "QCToken Checkbox",
+  "package": "QCT.FORM",
+  "group": "Form",
+  "type": "QCT.FORM.CHECKBOX",
+  "link": "https://www.figma.com/file/lHZxBAnu1fCYFbHAIQiwTE/Libriary?node-id=732%3A7808",
+  "attributes": [
+    {
+      "name": "label",
+      "type": ["Operator", "string"],
+      "control": "executor,text",
+      "description": "Label of the Checkbox. Can be empty",
+      "example": "Label"
+    },
+    {
+      "name": "name",
+      "type": ["string"],
+      "control": "text",
+      "description": "Field name in the html"
+    },
+    {
+      "name": "color",
+      "type": ["string"],
+      "control": "selectColor",
+      "description": "Color of the Checkbox.",
+      "default": "primary.main"
+    },
+    {
+      "name": "variant",
+      "type": ["string"],
+      "control": "select",
+      "chooses": [
+        {
+          "name": "Single",
+          "value": "single"
+        },
+        {
+          "name": "Multi",
+          "value": "multi"
+        }
+      ],
+      "default": "multi",
+      "description": "Choose variant of checkbox. You should fill value for multi variant"
+    },
+    {
+      "name": "value",
+      "type": ["Operator", "string"],
+      "control": "executor,string",
+      "description": "Value of the checkbox for multi variant"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "name": "QCT Builder Model Selector",
+  "description": "Select model with add/edit form",
+  "package": "QCT.BUILDER",
+  "group": "Action",
+  "type": "QCT.BUILDER.MODEL_SELECTOR",
+  "attributes": [
+    {
+      "name": "query",
+      "type": ["string"],
+      "control": "text",
+      "description": "Select url path to fetch application"
+    },
+    {
+      "name": "title",
+      "type": ["string"],
+      "control": "text",
+      "description": "Show title for the panel"
+    },
+    {
+      "name": "setglobal",
+      "type": ["setglobals"],
+      "control": "config",
+      "description": "Set value into global values of page"
+    },
+    {
+      "name": "queryParams",
+      "type": ["getglobals"],
+      "control": "config",
+      "description": "Get information from globals"
+    },
+    {
+      "name": "height",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Defines the height of the carousel."
+    },
+    {
+      "name": "addLeaf",
+      "type": ["boolean"],
+      "control": "boolean",
+      "description": "addLeaf"
+    },
+    {
+      "name": "groupKey",
+      "type": ["string"],
+      "control": "text",
+      "description": "parentType"
+    },
+    {
+      "name": "parentKey",
+      "type": ["string"],
+      "control": "text",
+      "description": "parentId"
+    },
+    {
+      "name": "addIcon",
+      "control": "config",
+      "description": "Icon config",
+      "type": ["BuilderConfig"],
+      "example": {
+        "pageObjectId": "add-icon-button",
+        "objectId": "add-icon-button",
+        "type": "QCT.COMMON.ICON_BUTTON",
+        "icon": {
+          "pageObjectId": "add-icon",
+          "objectId": "add-icon",
+          "type": "QCT.COMMON.SVGICON",
+          "width": "16px",
+          "content": "<path fillRule='evenodd' clipRule='evenodd' d='M2.667 7.167h10.666V8.5H2.667V7.167Z' fill='#98A7B4'/><path fillRule='evenodd' clipRule='evenodd' d='M7.333 13.167V2.5h1.334v10.667H7.333Z' fill='#98A7B4'/>"
+        }
+      }
+    },
+    {
+      "name": "editIcon",
+      "control": "config",
+      "description": "Edit Button Icon config",
+      "type": ["BuilderConfig"]
+    },
+    {
+      "name": "hideDropdown",
+      "type": ["boolean"],
+      "defalt": false,
+      "control": "boolean",
+      "description": "hide Dropdown menu"
+    },
+    {
+      "name": "hasItemDivider",
+      "type": ["boolean"],
+      "defalt": false,
+      "control": "boolean",
+      "description": "Add divider"
+    },
+    {
+      "name": "showFieldAll",
+      "type": ["boolean"],
+      "defalt": false,
+      "control": "boolean",
+      "description": "Show field with name All"
+    },
+    {
+      "name": "displayName",
+      "type": ["string"],
+      "default": "name",
+      "control": "text",
+      "description": "Get display value by the `displayName` key"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "QCT Handlers Redirect",
+  "description": "Redirect to other page",
+  "package": "QCT.HANDLERS",
+  "group": "Handlers",
+  "type": "QCT.HANDLERS.REDIRECT",
+  "attributes": [
+    {
+      "name": "pagePath",
+      "type": ["string", "Operator"],
+      "control": "text,executor",
+      "description": "Path to other page"
+    },
+    {
+      "name": "actionName",
+      "type": ["string"],
+      "default": "onProcess",
+      "control": "select",
+      "description": "List of names of the handlers",
+      "chooses": [
+        {
+          "name": "Redirect to other page",
+          "value": "onProcess"
+        }
+      ]
+    }
+  ]
+}

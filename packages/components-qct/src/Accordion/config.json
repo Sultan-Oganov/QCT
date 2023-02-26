@@ -1,0 +1,27 @@
+{
+  "name": "QCT Accordion",
+  "description": "QCToken Accordion",
+  "package": "QCT.COMMON",
+  "group": "View",
+  "type": "QCT.COMMON.ACCORDION",
+  "attributes": [
+    {
+      "name": "headers",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Header elements"
+    },
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Content elements"
+    },
+    {
+      "name": "isOpenDefault",
+      "type": ["Operator", "Boolean"],
+      "control": "executor,boolean",
+      "description": "Set up default value for isOpen"
+    }
+  ]
+}

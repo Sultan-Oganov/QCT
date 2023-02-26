@@ -1,0 +1,64 @@
+{
+  "name": "QCT Image",
+  "description": "QCToken Image",
+  "package": "QCT.COMMON",
+  "group": "View",
+  "type": "QCT.COMMON.IMAGE",
+  "attributes": [
+    {
+      "name": "width",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Image width",
+      "default": "600px"
+    },
+    {
+      "name": "height",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Image height"
+    },
+    {
+      "name": "borderRadius",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Image border radius"
+    },
+    {
+      "name": "src",
+      "type": [
+        "string",
+        "AdaptiveCss[string]",
+        "Operator",
+        "AdaptiveCss[Operator]"
+      ],
+      "control": "file,executor",
+      "description": "Image source"
+    },
+    {
+      "name": "resize",
+      "type": ["string"],
+      "control": "select",
+      "description": "Select image size",
+      "default": "fill",
+      "chooses": [
+        {
+          "name": "fill",
+          "value": "fill"
+        },
+        {
+          "name": "contain",
+          "value": "contain"
+        },
+        {
+          "name": "cover",
+          "value": "cover"
+        },
+        {
+          "name": "scale-down",
+          "value": "scale-down"
+        }
+      ]
+    }
+  ]
+}

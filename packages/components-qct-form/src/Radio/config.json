@@ -1,0 +1,41 @@
+{
+  "name": "QCT Radio RFD",
+  "description": "QCToken Radio",
+  "package": "QCT.FORM",
+  "group": "Form",
+  "type": "QCT.FORM.RADIO",
+  "link": "https://www.figma.com/file/lHZxBAnu1fCYFbHAIQiwTE/Libriary?node-id=1772%3A10229",
+  "attributes": [
+    {
+      "name": "label",
+      "type": ["string"],
+      "control": "text",
+      "description": "Label of the Radio.",
+      "example": "Radio"
+    },
+    {
+      "name": "name",
+      "type": ["string"],
+      "default": "",
+      "control": "text",
+      "description": "Field name in the html"
+    },
+    {
+      "name": "color",
+      "type": ["string"],
+      "control": "select",
+      "description": "Color of the Radio.",
+      "example": "primary",
+      "chooses": [
+        {
+          "name": "primary",
+          "value": "primary"
+        },
+        {
+          "name": "white",
+          "value": "white"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "name": "QCT Drawer",
+  "description": "QCToken Drawer",
+  "package": "QCT.COMMON",
+  "group": "View",
+  "type": "QCT.COMMON.DRAWER",
+  "attributes": [
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "description": "Nested elements to render element in the Drawer. All elements will be in the vertical direction",
+      "control": "config"
+    },
+    {
+      "name": "appearance",
+      "type": ["string"],
+      "description": "Choose how drawer will appearance",
+      "default": "bottom",
+      "control": "select",
+      "chooses": [
+        {
+          "name": "From bottom",
+          "value": "bottom"
+        },
+        {
+          "name": "From left",
+          "value": "left"
+        },
+        {
+          "name": "From right",
+          "value": "right"
+        },
+        {
+          "name": "From top",
+          "value": "top"
+        }
+      ]
+    },
+    {
+      "name": "minWidth",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Min Width"
+    },
+    {
+      "name": "minHeight",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Min Height"
+    },
+    {
+      "name": "maxWidth",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Max Width"
+    },
+    {
+      "name": "maxHeight",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Max Height"
+    },
+    {
+      "name": "setStateToGlobal",
+      "type": ["string"],
+      "control": "text",
+      "description": "This value can use to detect the state of the component"
+    },
+    {
+      "name": "defaultIsOpen",
+      "type": ["boolean"],
+      "control": "boolean",
+      "default": false,
+      "description": "Open drawer by default"
+    }
+  ]
+}

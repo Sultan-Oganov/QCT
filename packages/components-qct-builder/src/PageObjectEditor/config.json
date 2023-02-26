@@ -1,0 +1,33 @@
+{
+  "name": "QCT Builder Page Object Editor",
+  "description": "Edit attributes for page object",
+  "package": "QCT.BUILDER",
+  "group": "View",
+  "type": "QCT.BUILDER.PAGE_OBJECT_EDITOR",
+  "attributes": [
+    {
+      "name": "query",
+      "type": ["string"],
+      "control": "text",
+      "description": "Select url path to fetch page"
+    },
+    {
+      "name": "queryParams",
+      "type": ["getglobals"],
+      "control": "config",
+      "description": "Get query params from globals"
+    },
+    {
+      "name": "masterId",
+      "type": ["reference"],
+      "control": "text",
+      "description": "Choose master object to invoke any handlers"
+    },
+    {
+      "name": "onInstanceUpdate",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "description": "Call nested process on update instance"
+    }
+  ]
+}

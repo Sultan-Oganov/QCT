@@ -1,0 +1,238 @@
+{
+  "name": "QCT Static Icon",
+  "description": "QCToken Ions component",
+  "package": "QCT.STATIC",
+  "group": "View",
+  "type": "QCT.STATIC.ICON",
+  "attributes": [
+    {
+      "name": "color",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "selectColor",
+      "description": "Select color for icon"
+    },
+    {
+      "name": "name",
+      "type": ["string"],
+      "control": "select",
+      "description": "Select name of icon",
+      "chooses": [
+        {
+          "name": "ArrowLeft",
+          "value": "arrow-left"
+        },
+        {
+          "name": "QCT",
+          "value": "qct"
+        },
+        {
+          "name": "Search",
+          "value": "search"
+        },
+        {
+          "name": "Link",
+          "value": "link"
+        },
+        {
+          "name": "Refresh",
+          "value": "refresh"
+        },
+        {
+          "name": "Play",
+          "value": "play"
+        },
+        {
+          "name": "PlayForCourse",
+          "value": "play-for-course"
+        },
+        {
+          "name": "Study",
+          "value": "study"
+        },
+        {
+          "name": "ThreeDCube",
+          "value": "threeDCube"
+        },
+        {
+          "name": "VrGlasses",
+          "value": "vr-glasses"
+        },
+        {
+          "name": "WalletPassesApp",
+          "value": "wallet-passesApp"
+        },
+        {
+          "name": "Market",
+          "value": "market"
+        },
+        {
+          "name": "SocialNetwork ",
+          "value": "social-network"
+        },
+        {
+          "name": "TransactionHistory",
+          "value": "transaction-history"
+        },
+        {
+          "name": "Show",
+          "value": "show"
+        },
+        {
+          "name": "ArrowUp",
+          "value": "arrow-up"
+        },
+        {
+          "name": "ArrowDown",
+          "value": "arrow-down"
+        },
+        {
+          "name": "ArrowRight",
+          "value": "arrow-right"
+        },
+        {
+          "name": "Course",
+          "value": "course"
+        },
+        {
+          "name": "Homework",
+          "value": "homework"
+        },
+        {
+          "name": "Leave",
+          "value": "leave"
+        },
+        {
+          "name": "Chair",
+          "value": "chair"
+        },
+        {
+          "name": "Chat",
+          "value": "chat"
+        },
+        {
+          "name": "Analytic",
+          "value": "analytic"
+        },
+        {
+          "name": "Wallet",
+          "value": "wallet"
+        },
+        {
+          "name": "Text",
+          "value": "text"
+        },
+        {
+          "name": "Unlock",
+          "value": "unlock"
+        },
+        {
+          "name": "Personal",
+          "value": "personal"
+        },
+        {
+          "name": "Like",
+          "value": "like"
+        },
+        {
+          "name": "Notification",
+          "value": "notification"
+        },
+        {
+          "name": "Theme",
+          "value": "theme"
+        },
+        {
+          "name": "Globe",
+          "value": "globe"
+        },
+        {
+          "name": "ExchangeArrows",
+          "value": "exchange-arrows"
+        },
+        {
+          "name": "Settings",
+          "value": "settings"
+        },
+        {
+          "name": "Filter",
+          "value": "filter"
+        },
+        {
+          "name": "JobApply",
+          "value": "job-apply"
+        },
+        {
+          "name": "Dollar",
+          "value": "dollar"
+        },
+        {
+          "name": "Delete",
+          "value": "delete"
+        },
+        {
+          "name": "TimeSquare",
+          "value": "time-square"
+        },
+        {
+          "name": "Edit",
+          "value": "edit"
+        },
+        {
+          "name": "Burger",
+          "value": "burger"
+        },
+        {
+          "name": "Close",
+          "value": "close"
+        },
+        {
+          "name": "Add",
+          "value": "add"
+        },
+        {
+          "name": "Download",
+          "value": "download"
+        },
+        {
+          "name": "Hide",
+          "value": "hide"
+        },
+        {
+          "name": "Leadership",
+          "value": "leadership"
+        },
+        {
+          "name": "Home",
+          "value": "home"
+        },
+        {
+          "name": "BriefcaseSearch",
+          "value": "briefcase-search"
+        },
+        {
+          "name": "QuestionMark",
+          "value": "question-mark"
+        },
+        {
+          "name": "Exclamation",
+          "value": "exclamation"
+        },
+        {
+          "name": "Support",
+          "value": "support"
+        },
+        {
+          "name": "AboutUs",
+          "value": "about-us"
+        }
+      ]
+    },
+    {
+      "name": "width",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Width of icon",
+      "default": "24px"
+    }
+  ]
+}

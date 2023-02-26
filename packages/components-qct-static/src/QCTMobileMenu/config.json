@@ -1,0 +1,21 @@
+{
+  "name": "QCT Static Mobile Menu",
+  "description": "QCToken Mobile Menu",
+  "package": "QCT.STATIC",
+  "group": "View",
+  "type": "QCT.STATIC.MOBILE_MENU",
+  "attributes": [
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "description": "Nested elements",
+      "control": "config"
+    },
+    {
+      "name": "accessRoutes",
+      "type": ["string[]"],
+      "description": "Set array of all available route for the menu. We are comparing path with location by matchPath",
+      "control": "json"
+    }
+  ]
+}

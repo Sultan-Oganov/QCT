@@ -1,0 +1,21 @@
+{
+  "name": "QCT Route Component",
+  "description": "Create route to match path",
+  "package": "QCT.ROUTER",
+  "group": "Router",
+  "type": "QCT.ROUTER.ROUTE",
+  "attributes": [
+    {
+      "name": "path",
+      "type": ["string"],
+      "control": "text",
+      "description": "Router path to match the page or nested component"
+    },
+    {
+      "name": "element",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "description": "Nested element for route. Better to pass any Page Component"
+    }
+  ]
+}

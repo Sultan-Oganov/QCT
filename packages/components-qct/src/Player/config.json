@@ -1,0 +1,58 @@
+{
+  "name": "QCT Player RFD",
+  "description": "QCToken Player",
+  "package": "QCT.COMMON",
+  "group": "View",
+  "type": "QCT.COMMON.PLAYER",
+  "link": "https://www.figma.com/file/lHZxBAnu1fCYFbHAIQiwTE/Libriary?node-id=1038%3A9104",
+  "attributes": [
+    {
+      "name": "src",
+      "type": ["string", "Operator"],
+      "control": "text,executor",
+      "example": "https://youtu.be/vFpIk-IhNnM",
+      "description": "Link to video source for player"
+    },
+    {
+      "name": "width",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "default": "640px",
+      "description": "Defines the width of the player."
+    },
+    {
+      "name": "height",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "default": "360px",
+      "description": "Defines the height of the player."
+    },
+    {
+      "name": "autoplay",
+      "type": ["boolean"],
+      "control": "boolean",
+      "default": false,
+      "description": "Player autoplay"
+    },
+    {
+      "name": "muted",
+      "type": ["boolean"],
+      "control": "boolean",
+      "default": true,
+      "description": "Player muted"
+    },
+    {
+      "name": "placeholder",
+      "type": ["string"],
+      "control": "text",
+      "description": "Placeholder for the Youtube player at the end of the video"
+    },
+    {
+      "name": "hideControls",
+      "type": ["boolean"],
+      "control": "boolean",
+      "default": false,
+      "description": "Hide controls for the Youtube player"
+    }
+  ]
+}

@@ -1,0 +1,374 @@
+{
+  "name": "QCT FlexBox",
+  "description": "QCToken FlexBox",
+  "package": "QCT.COMMON",
+  "group": "View",
+  "type": "QCT.COMMON.FLEXBOX",
+  "attributes": [
+    {
+      "name": "direction",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "select",
+      "chooses": [
+        {
+          "name": "column-reverse",
+          "value": "column-reverse"
+        },
+        {
+          "name": "column",
+          "value": "column"
+        },
+        {
+          "name": "row-reverse",
+          "value": "row-reverse"
+        },
+        {
+          "name": "row",
+          "value": "row"
+        }
+      ],
+      "default": "row",
+      "description": "Defines the flex-direction style property. It is applied for all screen sizes."
+    },
+    {
+      "name": "wrap",
+      "type": ["string"],
+      "control": "select",
+      "chooses": [
+        {
+          "name": "nowrap",
+          "value": "nowrap"
+        },
+        {
+          "name": "wrap-reverse",
+          "value": "wrap-reverse"
+        },
+        {
+          "name": "wrap",
+          "value": "wrap"
+        }
+      ],
+      "default": "wrap",
+      "description": "Defines the flex-wrap style property. It's applied for all screen sizes."
+    },
+    {
+      "name": "justifyContent",
+      "type": ["string"],
+      "control": "select",
+      "chooses": [
+        {
+          "name": "flex-start",
+          "value": "flex-start"
+        },
+        {
+          "name": "flex-end",
+          "value": "flex-end"
+        },
+        {
+          "name": "center",
+          "value": "center"
+        },
+        {
+          "name": "space-between",
+          "value": "space-between"
+        },
+        {
+          "name": "space-around",
+          "value": "space-around"
+        },
+        {
+          "name": "space-evenly",
+          "value": "space-evenly"
+        }
+      ],
+      "default": "flex-start",
+      "description": "Defines the justify-content style property. It's applied for all screen sizes."
+    },
+    {
+      "name": "alignItems",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "select",
+      "chooses": [
+        {
+          "name": "stretch",
+          "value": "stretch"
+        },
+        {
+          "name": "flex-start",
+          "value": "flex-start"
+        },
+        {
+          "name": "flex-end",
+          "value": "flex-end"
+        },
+        {
+          "name": "center",
+          "value": "center"
+        }
+      ],
+      "description": "Defines the flex-wrap style property. It's applied for all screen sizes."
+    },
+    {
+      "name": "spacing",
+      "type": ["number", "AdaptiveCss<number>"],
+      "control": "number",
+      "description": "Spacing between child elements"
+    },
+    {
+      "name": "height",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "cssMeasure",
+      "description": "Height"
+    },
+    {
+      "name": "width",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "cssMeasure",
+      "description": "Width"
+    },
+    {
+      "name": "maxWidth",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "cssMeasure",
+      "description": "Max Width"
+    },
+    {
+      "name": "minWidth",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "cssMeasure",
+      "description": "Min Width"
+    },
+    {
+      "name": "maxHeight",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "cssMeasure",
+      "description": "Max Height"
+    },
+    {
+      "name": "minHeight",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "cssMeasure",
+      "description": "Min Height"
+    },
+    {
+      "name": "borderRadius",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "border",
+      "description": "Border radius",
+      "example": "6px"
+    },
+    {
+      "name": "borderColor",
+      "type": ["string"],
+      "control": "selectColor",
+      "description": "Border color"
+    },
+    {
+      "name": "margin",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "margin",
+      "description": "Margin",
+      "example": "6px"
+    },
+    {
+      "name": "padding",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "padding",
+      "description": "Paddings",
+      "example": "6px"
+    },
+    {
+      "name": "backgroundColor",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "selectColor",
+      "description": "Block background-color",
+      "chooses": [
+        {
+          "name": "primary",
+          "value": "primary"
+        },
+        {
+          "name": "secondary",
+          "value": "secondary"
+        },
+        {
+          "name": "white",
+          "value": "white"
+        },
+        {
+          "name": "black",
+          "value": "black"
+        },
+        {
+          "name": "main",
+          "value": "main"
+        },
+        {
+          "name": "common",
+          "value": "common"
+        }
+      ]
+    },
+    {
+      "name": "backgroundImage",
+      "type": ["string", "Operator"],
+      "control": "file,executor",
+      "description": "Block background-image"
+    },
+    {
+      "name": "backgroundSize",
+      "type": ["string"],
+      "control": "select",
+      "description": "Block background-image size",
+      "chooses": [
+        {
+          "name": "cover",
+          "value": "cover"
+        },
+        {
+          "name": "contain",
+          "value": "contain"
+        },
+        {
+          "name": "auto",
+          "value": "auto"
+        }
+      ]
+    },
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "control": "config",
+      "description": "Nested items of the FlexBox component",
+      "example": [
+        {
+          "pageObjectId": "unique1",
+          "objectId": "child1",
+          "type": "QCT.COMMON.BLOCK",
+          "title": "Default Button",
+          "padding": 10,
+          "backgroundColor": "black"
+        },
+        {
+          "pageObjectId": "unique2",
+          "objectId": "child2",
+          "type": "QCT.COMMON.BLOCK",
+          "title": "Default Button",
+          "padding": 10,
+          "backgroundColor": "secondary"
+        },
+        {
+          "pageObjectId": "unique3",
+          "objectId": "child3",
+          "type": "QCT.COMMON.BLOCK",
+          "title": "Default Button",
+          "padding": 10,
+          "backgroundColor": "primary"
+        }
+      ]
+    },
+    {
+      "name": "flexGrow",
+      "type": ["number", "AdaptiveCss[number]"],
+      "control": "number",
+      "description": "Set flexGrow attribute to box"
+    },
+    {
+      "name": "flexShrink",
+      "type": ["number", "AdaptiveCss[number]"],
+      "control": "number",
+      "description": "Set flexShrink attribute to box"
+    },
+    {
+      "name": "hiddenRules",
+      "type": ["Operator[]"],
+      "description": "List of operator to execute",
+      "control": "executor"
+    },
+    {
+      "name": "overflowX",
+      "type": ["string"],
+      "description": "Set overflow by 'X'",
+      "control": "select",
+      "chooses": [
+        {
+          "name": "auto",
+          "value": "auto"
+        },
+        {
+          "name": "hidden",
+          "value": "hidden"
+        },
+        {
+          "name": "scroll",
+          "value": "scroll"
+        }
+      ]
+    },
+    {
+      "name": "overflowY",
+      "type": ["string"],
+      "description": "Set overflow by 'Y'",
+      "control": "select",
+      "chooses": [
+        {
+          "name": "auto",
+          "value": "auto"
+        },
+        {
+          "name": "hidden",
+          "value": "hidden"
+        },
+        {
+          "name": "scroll",
+          "value": "scroll"
+        }
+      ]
+    },
+    {
+      "name": "positionType",
+      "type": ["string"],
+      "control": "select",
+      "chooses": [
+        {
+          "name": "static",
+          "value": "static"
+        },
+        {
+          "name": "relative",
+          "value": "relative"
+        },
+        {
+          "name": "absolute",
+          "value": "absolute"
+        },
+        {
+          "name": "fixed",
+          "value": "fixed"
+        },
+        {
+          "name": "sticky",
+          "value": "sticky"
+        }
+      ],
+      "default": "static",
+      "description": "Defines the position type property."
+    },
+    {
+      "name": "positionSpace",
+      "type": ["position"],
+      "control": "config",
+      "description": "Defines the position property (top right bottom left). Write in turn with a space",
+      "example": {
+        "top": "0px",
+        "left": "0px"
+      }
+    },
+    {
+      "name": "actionClick",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "description": "Handler to invoke"
+    }
+  ]
+}

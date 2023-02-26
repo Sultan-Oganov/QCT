@@ -1,0 +1,131 @@
+{
+  "name": "QCT Form RFD",
+  "description": "QCToken Form",
+  "package": "QCT.FORM",
+  "group": "Form",
+  "type": "QCT.FORM.FORM",
+  "attributes": [
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "description": "Nested components",
+      "control": "config",
+      "example": [
+        {
+          "pageObjectId": "checkbox",
+          "objectId": "checkbox",
+          "type": "QCT.FORM.CHECKBOX",
+          "label": "Checkbox Example"
+        },
+        {
+          "pageObjectId": "radio",
+          "objectId": "radio",
+          "type": "QCT.FORM.RADIO",
+          "label": "Radio Example"
+        },
+        {
+          "pageObjectId": "textarea",
+          "objectId": "textarea",
+          "type": "QCT.FORM.TEXT_AREA",
+          "label": "TextArea Example"
+        },
+        {
+          "pageObjectId": "textfield",
+          "objectId": "textfield",
+          "type": "QCT.FORM.TEXT_FIELD",
+          "label": "TextField Example"
+        }
+      ]
+    },
+    {
+      "name": "query",
+      "type": ["string,Operator"],
+      "control": "text,executor",
+      "description": "Select url path to fetch data"
+    },
+    {
+      "name": "queryParams",
+      "type": ["getglobals"],
+      "control": "config",
+      "description": "Get information from globals"
+    },
+    {
+      "name": "submitQuery",
+      "type": ["Operator"],
+      "description": "Query to submit form",
+      "control": "executor"
+    },
+    {
+      "name": "submitMethod",
+      "type": ["Operator"],
+      "description": "Select method to submit",
+      "control": "executor"
+    },
+    {
+      "name": "height",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Height"
+    },
+    {
+      "name": "width",
+      "type": ["string"],
+      "control": "cssMeasure",
+      "description": "Width"
+    },
+    {
+      "name": "overflowY",
+      "type": ["string"],
+      "control": "select",
+      "description": "Set overflow by 'Y'",
+      "chooses": [
+        {
+          "name": "auto",
+          "value": "auto"
+        },
+        {
+          "name": "scroll",
+          "value": "scroll"
+        }
+      ]
+    },
+    {
+      "name": "submitHandlerSuccess",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "description": "Handler to invoke"
+    },
+    {
+      "name": "isFormData",
+      "type": ["boolean"],
+      "control": "boolean",
+      "default": false,
+      "description": "Request content type"
+    },
+    {
+      "name": "setGlobal",
+      "type": ["setglobals"],
+      "control": "config",
+      "description": "Set value into global values of page"
+    },
+    {
+      "name": "getGlobal",
+      "type": ["getglobals"],
+      "control": "config",
+      "description": "Collect values from global values of page"
+    },
+    {
+      "name": "isRefreshAfterSubmit",
+      "type": ["boolean"],
+      "control": "boolean",
+      "default": false,
+      "description": "Need to refresh after submitting?"
+    },
+    {
+      "name": "minWidth",
+      "type": ["string", "AdaptiveCss[string]"],
+      "control": "cssMeasure",
+      "description": "Min Width"
+    }
+  ]
+}

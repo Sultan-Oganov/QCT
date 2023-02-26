@@ -1,0 +1,15 @@
+{
+  "name": "QCT Handlers Invalid Request Cache",
+  "description": "Invalid request cache and make the reload of the request",
+  "package": "QCT.HANDLERS",
+  "group": "Handlers",
+  "type": "QCT.HANDLERS.REQUEST_CACHE_INVALID",
+  "attributes": [
+    {
+      "name": "cacheKeys",
+      "type": ["string[]"],
+      "control": "json",
+      "description": "Name of the request cache"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "QCT Form Values",
+  "description": "Get all form values and pass into childs props",
+  "package": "QCT.FORM",
+  "group": "Form",
+  "type": "QCT.FORM.VALUES",
+  "attributes": [
+    {
+      "name": "childs",
+      "type": ["BuilderConfig[]"],
+      "description": "Nested components",
+      "control": "config"
+    },
+    {
+      "name": "names",
+      "type": ["string[]"],
+      "description": "Choose fields that passed into values. Need for optimization.",
+      "control": "config"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "QCT Static RoadMapCard",
+  "description": "QCToken RoadMapCard",
+  "package": "QCT.STATIC",
+  "group": "Roadmap",
+  "type": "QCT.STATIC.ROADMAP.CARD",
+  "deprecated": true,
+  "attributes": [
+    {
+      "name": "title",
+      "type": ["string"],
+      "control": "text",
+      "default": "title"
+    },
+    {
+      "name": "child",
+      "type": ["BuilderConfig"],
+      "control": "config",
+      "default": "Icon"
+    },
+    {
+      "name": "description",
+      "type": ["string"],
+      "control": "text",
+      "default": "Lorem ipsum"
+    }
+  ]
+}
